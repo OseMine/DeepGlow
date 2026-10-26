@@ -1,0 +1,74 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_type:
+        description: 'Build configuration'
+        required: true
+        default: 'Release'
+        type: choice
+        options:
+          - Release
+          - Debug
+
+jobs:
+  build:
+    name: Build (${{ matrix.os }}, ${{ inputs.build_type }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Clone upstream OpenFX SDK
+        shell: bash
+        run: git clone --depth 1 --branch OFX_Release_1_4_TAG https://github.com/AcademySoftwareFoundation/openfx.git openfx-sdk
+
+      - name: Configure (Linux)
+        if: runner.os == 'Linux'
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=${{ inputs.build_type }} -DOFX_ROOT=${{ github.workspace }}/openfx-sdk
+
+      - name: Build (Linux)
+        if: runner.os == 'Linux'
+        run: cmake --build build --config ${{ inputs.build_type }} -j$(nproc)
+
+      - name: Configure (macOS)
+        if: runner.os == 'macOS'
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=${{ inputs.build_type }} -DOFX_ROOT=${{ github.workspace }}/openfx-sdk -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64"
+
+      - name: Build (macOS)
+        if: runner.os == 'macOS'
+        run: cmake --build build --config ${{ inputs.build_type }} -j$(sysctl -n hw.ncpu)
+
+      - name: Configure (Windows)
+        if: runner.os == 'Windows'
+        run: cmake -S . -B build -G "Visual Studio 17 2022" -A x64 -DOFX_ROOT=${{ github.workspace }}/openfx-sdk
+
+      - name: Build (Windows)
+        if: runner.os == 'Windows'
+        run: cmake --build build --config ${{ inputs.build_type }} -- /m:2
+
+      - name: Package bundle
+        shell: bash
+        run: |
+          mkdir -p dist
+          if [ "$RUNNER_OS" = "Windows" ]; then
+            7z a dist/DeepGlow2-Windows-x64.zip ./build/bundle/DeepGlow2.ofx.bundle
+          elif [ "$RUNNER_OS" = "macOS" ]; then
+            ditto -c -k --sequesterRsrc --keepParent ./build/bundle/DeepGlow2.ofx.bundle dist/DeepGlow2-macOS-universal.zip
+          else
+            tar -czf dist/DeepGlow2-Linux-x86_64.tar.gz -C ./build/bundle DeepGlow2.ofx.bundle
+          fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: DeepGlow2-${{ runner.os }}-${{ inputs.build_type }}
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 14

@@ -1,0 +1,2358 @@
+{
+ "file": "C:\\Users\\Oskar\\Desktop\\DeepGlow\\DeepGlow2.aex",
+ "size": 4516352,
+ "sha256": "b5099e20456b5dee53a3437551a3717c94d7c2b77a6ed1c0cd0cf0b5c6496107",
+ "machine": "0x8664",
+ "timestamp": 1748685085,
+ "dllchars": "0x2022",
+ "subsystem": 2,
+ "imagebase": "0x180000000",
+ "ep": "0x36d9e8",
+ "dllname": 288,
+ "sections": [
+  {
+   "name": ".text",
+   "va": "0x1000",
+   "vsize": "0x3d0598",
+   "raw": "0x3d0600",
+   "rawptr": "0x400",
+   "chars": "0x60000020"
+  },
+  {
+   "name": ".rdata",
+   "va": "0x3d2000",
+   "vsize": "0x6666e",
+   "raw": "0x66800",
+   "rawptr": "0x3d0a00",
+   "chars": "0x40000040"
+  },
+  {
+   "name": ".data",
+   "va": "0x439000",
+   "vsize": "0xbfb0",
+   "raw": "0x4c00",
+   "rawptr": "0x437200",
+   "chars": "0xc0000040"
+  },
+  {
+   "name": ".pdata",
+   "va": "0x445000",
+   "vsize": "0x10eb4",
+   "raw": "0x11000",
+   "rawptr": "0x43be00",
+   "chars": "0x40000040"
+  },
+  {
+   "name": ".rsrc",
+   "va": "0x456000",
+   "vsize": "0x390",
+   "raw": "0x400",
+   "rawptr": "0x44ce00",
+   "chars": "0x40000040"
+  },
+  {
+   "name": ".reloc",
+   "va": "0x457000",
+   "vsize": "0x16f0",
+   "raw": "0x1800",
+   "rawptr": "0x44d200",
+   "chars": "0x42000040"
+  }
+ ],
+ "export_dll": "DeepGlow2.aex",
+ "exports": [
+  {
+   "ord": 1,
+   "name": "?aescriptsGetLicLibVersionString@@YAHAEAY0IA@D@Z",
+   "rva": "0x340010"
+  },
+  {
+   "ord": 2,
+   "name": "?aescriptsSaveLicenseToFileEx@@YAHPEBD0QEAD1AEAUaescriptsLicenseData@@@Z",
+   "rva": "0x3406b0"
+  },
+  {
+   "ord": 3,
+   "name": "EffectMain",
+   "rva": "0x2f340"
+  },
+  {
+   "ord": 4,
+   "name": "PluginDataEntryFunction2",
+   "rva": "0x2f6f0"
+  },
+  {
+   "ord": 5,
+   "name": "aescriptsAddBlockedSerial",
+   "rva": "0x3688b0"
+  },
+  {
+   "ord": 6,
+   "name": "aescriptsCheckOveruse",
+   "rva": "0x368990"
+  },
+  {
+   "ord": 7,
+   "name": "aescriptsConfigure",
+   "rva": "0x3689f0"
+  },
+  {
+   "ord": 8,
+   "name": "aescriptsDropLicenseFromLicenseServer",
+   "rva": "0x368b70"
+  },
+  {
+   "ord": 9,
+   "name": "aescriptsGetLicLibVersion",
+   "rva": "0x368c00"
+  },
+  {
+   "ord": 10,
+   "name": "aescriptsGetLicenseDataFromFile",
+   "rva": "0x368c10"
+  },
+  {
+   "ord": 11,
+   "name": "aescriptsGetLicenseServerConfig",
+   "rva": "0x368f20"
+  },
+  {
+   "ord": 12,
+   "name": "aescriptsGetMachineId",
+   "rva": "0x369010"
+  },
+  {
+   "ord": 13,
+   "name": "aescriptsGetRawLicenseDataFromFile",
+   "rva": "0x369070"
+  },
+  {
+   "ord": 14,
+   "name": "aescriptsInitLicenseData",
+   "rva": "0x3693d0"
+  },
+  {
+   "ord": 15,
+   "name": "aescriptsLoadLicenseFromFile",
+   "rva": "0x369430"
+  },
+  {
+   "ord": 16,
+   "name": "aescriptsRequestLicenseFromLicenseServer",
+   "rva": "0x369490"
+  },
+  {
+   "ord": 17,
+   "name": "aescriptsSaveLicenseToFile",
+   "rva": "0x3694b0"
+  },
+  {
+   "ord": 18,
+   "name": "aescriptsValidateLicense",
+   "rva": "0x3694f0"
+  },
+  {
+   "ord": 19,
+   "name": "cairo_append_path",
+   "rva": "0x2c9e10"
+  },
+  {
+   "ord": 20,
+   "name": "cairo_arc",
+   "rva": "0x2c9e90"
+  },
+  {
+   "ord": 21,
+   "name": "cairo_arc_negative",
+   "rva": "0x2c9f80"
+  },
+  {
+   "ord": 22,
+   "name": "cairo_clip",
+   "rva": "0x2ca070"
+  },
+  {
+   "ord": 23,
+   "name": "cairo_clip_extents",
+   "rva": "0x2ca0b0"
+  },
+  {
+   "ord": 24,
+   "name": "cairo_clip_preserve",
+   "rva": "0x2ca120"
+  },
+  {
+   "ord": 25,
+   "name": "cairo_close_path",
+   "rva": "0x2ca160"
+  },
+  {
+   "ord": 26,
+   "name": "cairo_copy_clip_rectangle_list",
+   "rva": "0x2ca1a0"
+  },
+  {
+   "ord": 27,
+   "name": "cairo_copy_page",
+   "rva": "0x2ca1c0"
+  },
+  {
+   "ord": 28,
+   "name": "cairo_copy_path",
+   "rva": "0x2ca200"
+  },
+  {
+   "ord": 29,
+   "name": "cairo_copy_path_flat",
+   "rva": "0x2ca220"
+  },
+  {
+   "ord": 30,
+   "name": "cairo_create",
+   "rva": "0x2ca240"
+  },
+  {
+   "ord": 31,
+   "name": "cairo_curve_to",
+   "rva": "0x2ca2b0"
+  },
+  {
+   "ord": 32,
+   "name": "cairo_debug_reset_static_data",
+   "rva": "0x2f4970"
+  },
+  {
+   "ord": 33,
+   "name": "cairo_destroy",
+   "rva": "0x2ca320"
+  },
+  {
+   "ord": 34,
+   "name": "cairo_device_acquire",
+   "rva": "0x2df4f0"
+  },
+  {
+   "ord": 35,
+   "name": "cairo_device_destroy",
+   "rva": "0x2df560"
+  },
+  {
+   "ord": 36,
+   "name": "cairo_device_finish",
+   "rva": "0x2df5c0"
+  },
+  {
+   "ord": 37,
+   "name": "cairo_device_flush",
+   "rva": "0x2df600"
+  },
+  {
+   "ord": 38,
+   "name": "cairo_device_get_reference_count",
+   "rva": "0x2df640"
+  },
+  {
+   "ord": 39,
+   "name": "cairo_device_get_type",
+   "rva": "0x2df650"
+  },
+  {
+   "ord": 40,
+   "name": "cairo_device_get_user_data",
+   "rva": "0x2df670"
+  },
+  {
+   "ord": 41,
+   "name": "cairo_device_reference",
+   "rva": "0x2df680"
+  },
+  {
+   "ord": 42,
+   "name": "cairo_device_release",
+   "rva": "0x2df6b0"
+  },
+  {
+   "ord": 43,
+   "name": "cairo_device_set_user_data",
+   "rva": "0x2df6f0"
+  },
+  {
+   "ord": 44,
+   "name": "cairo_device_status",
+   "rva": "0x2df710"
+  },
+  {
+   "ord": 45,
+   "name": "cairo_device_to_user",
+   "rva": "0x2ca350"
+  },
+  {
+   "ord": 46,
+   "name": "cairo_device_to_user_distance",
+   "rva": "0x2ca370"
+  },
+  {
+   "ord": 47,
+   "name": "cairo_fill",
+   "rva": "0x2ca390"
+  },
+  {
+   "ord": 48,
+   "name": "cairo_fill_extents",
+   "rva": "0x2ca3d0"
+  },
+  {
+   "ord": 49,
+   "name": "cairo_fill_preserve",
+   "rva": "0x2ca450"
+  },
+  {
+   "ord": 50,
+   "name": "cairo_font_extents",
+   "rva": "0x2ca490"
+  },
+  {
+   "ord": 51,
+   "name": "cairo_font_face_destroy",
+   "rva": "0x2d14e0"
+  },
+  {
+   "ord": 52,
+   "name": "cairo_font_face_get_reference_count",
+   "rva": "0x2d1530"
+  },
+  {
+   "ord": 53,
+   "name": "cairo_font_face_get_type",
+   "rva": "0x2d1540"
+  },
+  {
+   "ord": 54,
+   "name": "cairo_font_face_get_user_data",
+   "rva": "0x2d1550"
+  },
+  {
+   "ord": 55,
+   "name": "cairo_font_face_reference",
+   "rva": "0x2d1560"
+  },
+  {
+   "ord": 56,
+   "name": "cairo_font_face_set_user_data",
+   "rva": "0x2d1590"
+  },
+  {
+   "ord": 57,
+   "name": "cairo_font_face_status",
+   "rva": "0x2d15b0"
+  },
+  {
+   "ord": 58,
+   "name": "cairo_font_options_copy",
+   "rva": "0x2d1050"
+  },
+  {
+   "ord": 59,
+   "name": "cairo_font_options_create",
+   "rva": "0x2d10d0"
+  },
+  {
+   "ord": 60,
+   "name": "cairo_font_options_destroy",
+   "rva": "0x2d1110"
+  },
+  {
+   "ord": 61,
+   "name": "cairo_font_options_equal",
+   "rva": "0x2d1130"
+  },
+  {
+   "ord": 62,
+   "name": "cairo_font_options_get_antialias",
+   "rva": "0x2d1190"
+  },
+  {
+   "ord": 63,
+   "name": "cairo_font_options_get_hint_metrics",
+   "rva": "0x2d11b0"
+  },
+  {
+   "ord": 64,
+   "name": "cairo_font_options_get_hint_style",
+   "rva": "0x2d11d0"
+  },
+  {
+   "ord": 65,
+   "name": "cairo_font_options_get_subpixel_order",
+   "rva": "0x2d11f0"
+  },
+  {
+   "ord": 66,
+   "name": "cairo_font_options_hash",
+   "rva": "0x2d1210"
+  },
+  {
+   "ord": 67,
+   "name": "cairo_font_options_merge",
+   "rva": "0x2d1250"
+  },
+  {
+   "ord": 68,
+   "name": "cairo_font_options_set_antialias",
+   "rva": "0x2d12b0"
+  },
+  {
+   "ord": 69,
+   "name": "cairo_font_options_set_hint_metrics",
+   "rva": "0x2d12d0"
+  },
+  {
+   "ord": 70,
+   "name": "cairo_font_options_set_hint_style",
+   "rva": "0x2d12f0"
+  },
+  {
+   "ord": 71,
+   "name": "cairo_font_options_set_subpixel_order",
+   "rva": "0x2d1310"
+  },
+  {
+   "ord": 72,
+   "name": "cairo_font_options_status",
+   "rva": "0x2d1330"
+  },
+  {
+   "ord": 73,
+   "name": "cairo_format_stride_for_width",
+   "rva": "0x2d0430"
+  },
+  {
+   "ord": 74,
+   "name": "cairo_get_antialias",
+   "rva": "0x2ca4e0"
+  },
+  {
+   "ord": 75,
+   "name": "cairo_get_current_point",
+   "rva": "0x2ca500"
+  },
+  {
+   "ord": 76,
+   "name": "cairo_get_dash",
+   "rva": "0x2ca580"
+  },
+  {
+   "ord": 77,
+   "name": "cairo_get_dash_count",
+   "rva": "0x2ca5a0"
+  },
+  {
+   "ord": 78,
+   "name": "cairo_get_fill_rule",
+   "rva": "0x2ca5d0"
+  },
+  {
+   "ord": 79,
+   "name": "cairo_get_font_face",
+   "rva": "0x2ca5f0"
+  },
+  {
+   "ord": 80,
+   "name": "cairo_get_font_matrix",
+   "rva": "0x2ca610"
+  },
+  {
+   "ord": 81,
+   "name": "cairo_get_font_options",
+   "rva": "0x2ca630"
+  },
+  {
+   "ord": 82,
+   "name": "cairo_get_group_target",
+   "rva": "0x2ca680"
+  },
+  {
+   "ord": 83,
+   "name": "cairo_get_line_cap",
+   "rva": "0x2ca6a0"
+  },
+  {
+   "ord": 84,
+   "name": "cairo_get_line_join",
+   "rva": "0x2ca6c0"
+  },
+  {
+   "ord": 85,
+   "name": "cairo_get_line_width",
+   "rva": "0x2ca6e0"
+  },
+  {
+   "ord": 86,
+   "name": "cairo_get_matrix",
+   "rva": "0x2ca700"
+  },
+  {
+   "ord": 87,
+   "name": "cairo_get_miter_limit",
+   "rva": "0x2ca720"
+  },
+  {
+   "ord": 88,
+   "name": "cairo_get_operator",
+   "rva": "0x2ca740"
+  },
+  {
+   "ord": 89,
+   "name": "cairo_get_reference_count",
+   "rva": "0x2ca760"
+  },
+  {
+   "ord": 90,
+   "name": "cairo_get_scaled_font",
+   "rva": "0x2ca770"
+  },
+  {
+   "ord": 91,
+   "name": "cairo_get_source",
+   "rva": "0x2ca790"
+  },
+  {
+   "ord": 92,
+   "name": "cairo_get_target",
+   "rva": "0x2ca7b0"
+  },
+  {
+   "ord": 93,
+   "name": "cairo_get_tolerance",
+   "rva": "0x2ca7d0"
+  },
+  {
+   "ord": 94,
+   "name": "cairo_get_user_data",
+   "rva": "0x2ca7f0"
+  },
+  {
+   "ord": 95,
+   "name": "cairo_glyph_allocate",
+   "rva": "0x2d0ce0"
+  },
+  {
+   "ord": 96,
+   "name": "cairo_glyph_extents",
+   "rva": "0x2ca800"
+  },
+  {
+   "ord": 97,
+   "name": "cairo_glyph_free",
+   "rva": "0x2d0d10"
+  },
+  {
+   "ord": 98,
+   "name": "cairo_glyph_path",
+   "rva": "0x2ca870"
+  },
+  {
+   "ord": 99,
+   "name": "cairo_has_current_point",
+   "rva": "0x2ca8d0"
+  },
+  {
+   "ord": 100,
+   "name": "cairo_identity_matrix",
+   "rva": "0x2ca8f0"
+  },
+  {
+   "ord": 101,
+   "name": "cairo_image_surface_create",
+   "rva": "0x2d0480"
+  },
+  {
+   "ord": 102,
+   "name": "cairo_image_surface_create_for_data",
+   "rva": "0x2d0500"
+  },
+  {
+   "ord": 103,
+   "name": "cairo_image_surface_get_data",
+   "rva": "0x2d05d0"
+  },
+  {
+   "ord": 104,
+   "name": "cairo_image_surface_get_format",
+   "rva": "0x2d0600"
+  },
+  {
+   "ord": 105,
+   "name": "cairo_image_surface_get_height",
+   "rva": "0x2d0630"
+  },
+  {
+   "ord": 106,
+   "name": "cairo_image_surface_get_stride",
+   "rva": "0x2d0660"
+  },
+  {
+   "ord": 107,
+   "name": "cairo_image_surface_get_width",
+   "rva": "0x2d0690"
+  },
+  {
+   "ord": 108,
+   "name": "cairo_in_clip",
+   "rva": "0x2ca930"
+  },
+  {
+   "ord": 109,
+   "name": "cairo_in_fill",
+   "rva": "0x2ca990"
+  },
+  {
+   "ord": 110,
+   "name": "cairo_in_stroke",
+   "rva": "0x2ca9f0"
+  },
+  {
+   "ord": 111,
+   "name": "cairo_line_to",
+   "rva": "0x2caa50"
+  },
+  {
+   "ord": 112,
+   "name": "cairo_mask",
+   "rva": "0x2caa90"
+  },
+  {
+   "ord": 113,
+   "name": "cairo_mask_surface",
+   "rva": "0x2caae0"
+  },
+  {
+   "ord": 114,
+   "name": "cairo_matrix_init",
+   "rva": "0x2dc590"
+  },
+  {
+   "ord": 115,
+   "name": "cairo_matrix_init_identity",
+   "rva": "0x2dc5c0"
+  },
+  {
+   "ord": 116,
+   "name": "cairo_matrix_init_rotate",
+   "rva": "0x2dc5f0"
+  },
+  {
+   "ord": 117,
+   "name": "cairo_matrix_init_scale",
+   "rva": "0x2dc650"
+  },
+  {
+   "ord": 118,
+   "name": "cairo_matrix_init_translate",
+   "rva": "0x2dc670"
+  },
+  {
+   "ord": 119,
+   "name": "cairo_matrix_invert",
+   "rva": "0x2dc6a0"
+  },
+  {
+   "ord": 120,
+   "name": "cairo_matrix_multiply",
+   "rva": "0x2dc870"
+  },
+  {
+   "ord": 121,
+   "name": "cairo_matrix_rotate",
+   "rva": "0x2dc980"
+  },
+  {
+   "ord": 122,
+   "name": "cairo_matrix_scale",
+   "rva": "0x2dc9f0"
+  },
+  {
+   "ord": 123,
+   "name": "cairo_matrix_transform_distance",
+   "rva": "0x2dca30"
+  },
+  {
+   "ord": 124,
+   "name": "cairo_matrix_transform_point",
+   "rva": "0x2dca70"
+  },
+  {
+   "ord": 125,
+   "name": "cairo_matrix_translate",
+   "rva": "0x2dcac0"
+  },
+  {
+   "ord": 126,
+   "name": "cairo_mesh_pattern_begin_patch",
+   "rva": "0x2d9aa0"
+  },
+  {
+   "ord": 127,
+   "name": "cairo_mesh_pattern_curve_to",
+   "rva": "0x2d9ba0"
+  },
+  {
+   "ord": 128,
+   "name": "cairo_mesh_pattern_end_patch",
+   "rva": "0x2d9d30"
+  },
+  {
+   "ord": 129,
+   "name": "cairo_mesh_pattern_get_control_point",
+   "rva": "0x2d9ec0"
+  },
+  {
+   "ord": 130,
+   "name": "cairo_mesh_pattern_get_corner_color_rgba",
+   "rva": "0x2d9fb0"
+  },
+  {
+   "ord": 131,
+   "name": "cairo_mesh_pattern_get_patch_count",
+   "rva": "0x2da0c0"
+  },
+  {
+   "ord": 132,
+   "name": "cairo_mesh_pattern_get_path",
+   "rva": "0x2da120"
+  },
+  {
+   "ord": 133,
+   "name": "cairo_mesh_pattern_line_to",
+   "rva": "0x2da350"
+  },
+  {
+   "ord": 134,
+   "name": "cairo_mesh_pattern_move_to",
+   "rva": "0x2da4a0"
+  },
+  {
+   "ord": 135,
+   "name": "cairo_mesh_pattern_set_control_point",
+   "rva": "0x2da520"
+  },
+  {
+   "ord": 136,
+   "name": "cairo_mesh_pattern_set_corner_color_rgb",
+   "rva": "0x2da5e0"
+  },
+  {
+   "ord": 137,
+   "name": "cairo_mesh_pattern_set_corner_color_rgba",
+   "rva": "0x2da610"
+  },
+  {
+   "ord": 138,
+   "name": "cairo_move_to",
+   "rva": "0x2cabd0"
+  },
+  {
+   "ord": 139,
+   "name": "cairo_new_path",
+   "rva": "0x2cac10"
+  },
+  {
+   "ord": 140,
+   "name": "cairo_new_sub_path",
+   "rva": "0x2cac50"
+  },
+  {
+   "ord": 141,
+   "name": "cairo_paint",
+   "rva": "0x2cac90"
+  },
+  {
+   "ord": 142,
+   "name": "cairo_paint_with_alpha",
+   "rva": "0x2cacd0"
+  },
+  {
+   "ord": 143,
+   "name": "cairo_path_destroy",
+   "rva": "0x2df3f0"
+  },
+  {
+   "ord": 144,
+   "name": "cairo_path_extents",
+   "rva": "0x2cad10"
+  },
+  {
+   "ord": 145,
+   "name": "cairo_pattern_add_color_stop_rgb",
+   "rva": "0x2da720"
+  },
+  {
+   "ord": 146,
+   "name": "cairo_pattern_add_color_stop_rgba",
+   "rva": "0x2da750"
+  },
+  {
+   "ord": 147,
+   "name": "cairo_pattern_create_for_surface",
+   "rva": "0x2da840"
+  },
+  {
+   "ord": 148,
+   "name": "cairo_pattern_create_linear",
+   "rva": "0x2da8e0"
+  },
+  {
+   "ord": 149,
+   "name": "cairo_pattern_create_mesh",
+   "rva": "0x2da980"
+  },
+  {
+   "ord": 150,
+   "name": "cairo_pattern_create_radial",
+   "rva": "0x2daa40"
+  },
+  {
+   "ord": 151,
+   "name": "cairo_pattern_create_raster_source",
+   "rva": "0x2eec60"
+  },
+  {
+   "ord": 152,
+   "name": "cairo_pattern_create_rgb",
+   "rva": "0x2dab00"
+  },
+  {
+   "ord": 153,
+   "name": "cairo_pattern_create_rgba",
+   "rva": "0x2dab10"
+  },
+  {
+   "ord": 154,
+   "name": "cairo_pattern_destroy",
+   "rva": "0x2dac70"
+  },
+  {
+   "ord": 155,
+   "name": "cairo_pattern_get_color_stop_count",
+   "rva": "0x2dacc0"
+  },
+  {
+   "ord": 156,
+   "name": "cairo_pattern_get_color_stop_rgba",
+   "rva": "0x2dacf0"
+  },
+  {
+   "ord": 157,
+   "name": "cairo_pattern_get_extend",
+   "rva": "0x2dade0"
+  },
+  {
+   "ord": 158,
+   "name": "cairo_pattern_get_filter",
+   "rva": "0x2dadf0"
+  },
+  {
+   "ord": 159,
+   "name": "cairo_pattern_get_linear_points",
+   "rva": "0x2dae00"
+  },
+  {
+   "ord": 160,
+   "name": "cairo_pattern_get_matrix",
+   "rva": "0x2dae60"
+  },
+  {
+   "ord": 161,
+   "name": "cairo_pattern_get_radial_circles",
+   "rva": "0x2dae80"
+  },
+  {
+   "ord": 162,
+   "name": "cairo_pattern_get_reference_count",
+   "rva": "0x2daf10"
+  },
+  {
+   "ord": 163,
+   "name": "cairo_pattern_get_rgba",
+   "rva": "0x2daf20"
+  },
+  {
+   "ord": 164,
+   "name": "cairo_pattern_get_surface",
+   "rva": "0x2dafe0"
+  },
+  {
+   "ord": 165,
+   "name": "cairo_pattern_get_type",
+   "rva": "0x2db010"
+  },
+  {
+   "ord": 166,
+   "name": "cairo_pattern_get_user_data",
+   "rva": "0x2db020"
+  },
+  {
+   "ord": 167,
+   "name": "cairo_pattern_reference",
+   "rva": "0x2db030"
+  },
+  {
+   "ord": 168,
+   "name": "cairo_pattern_set_extend",
+   "rva": "0x2db060"
+  },
+  {
+   "ord": 169,
+   "name": "cairo_pattern_set_filter",
+   "rva": "0x2db0c0"
+  },
+  {
+   "ord": 170,
+   "name": "cairo_pattern_set_matrix",
+   "rva": "0x2db120"
+  },
+  {
+   "ord": 171,
+   "name": "cairo_pattern_set_user_data",
+   "rva": "0x2db1f0"
+  },
+  {
+   "ord": 172,
+   "name": "cairo_pattern_status",
+   "rva": "0x2db210"
+  },
+  {
+   "ord": 173,
+   "name": "cairo_pop_group",
+   "rva": "0x2cad50"
+  },
+  {
+   "ord": 174,
+   "name": "cairo_pop_group_to_source",
+   "rva": "0x2cadb0"
+  },
+  {
+   "ord": 175,
+   "name": "cairo_push_group",
+   "rva": "0x2cae50"
+  },
+  {
+   "ord": 176,
+   "name": "cairo_push_group_with_content",
+   "rva": "0x2cae90"
+  },
+  {
+   "ord": 177,
+   "name": "cairo_raster_source_pattern_get_acquire",
+   "rva": "0x2eed40"
+  },
+  {
+   "ord": 178,
+   "name": "cairo_raster_source_pattern_get_callback_data",
+   "rva": "0x2eed70"
+  },
+  {
+   "ord": 179,
+   "name": "cairo_raster_source_pattern_get_copy",
+   "rva": "0x2eed90"
+  },
+  {
+   "ord": 180,
+   "name": "cairo_raster_source_pattern_get_finish",
+   "rva": "0x2eedb0"
+  },
+  {
+   "ord": 181,
+   "name": "cairo_raster_source_pattern_get_snapshot",
+   "rva": "0x2eedd0"
+  },
+  {
+   "ord": 182,
+   "name": "cairo_raster_source_pattern_set_acquire",
+   "rva": "0x2eedf0"
+  },
+  {
+   "ord": 183,
+   "name": "cairo_raster_source_pattern_set_callback_data",
+   "rva": "0x2eee10"
+  },
+  {
+   "ord": 184,
+   "name": "cairo_raster_source_pattern_set_copy",
+   "rva": "0x2eee20"
+  },
+  {
+   "ord": 185,
+   "name": "cairo_raster_source_pattern_set_finish",
+   "rva": "0x2eee30"
+  },
+  {
+   "ord": 186,
+   "name": "cairo_raster_source_pattern_set_snapshot",
+   "rva": "0x2eee40"
+  },
+  {
+   "ord": 187,
+   "name": "cairo_recording_surface_create",
+   "rva": "0x2f2100"
+  },
+  {
+   "ord": 188,
+   "name": "cairo_recording_surface_get_extents",
+   "rva": "0x2f2280"
+  },
+  {
+   "ord": 189,
+   "name": "cairo_recording_surface_ink_extents",
+   "rva": "0x2f22d0"
+  },
+  {
+   "ord": 190,
+   "name": "cairo_rectangle",
+   "rva": "0x2caed0"
+  },
+  {
+   "ord": 191,
+   "name": "cairo_rectangle_list_destroy",
+   "rva": "0x2de0e0"
+  },
+  {
+   "ord": 192,
+   "name": "cairo_reference",
+   "rva": "0x2caf20"
+  },
+  {
+   "ord": 193,
+   "name": "cairo_region_contains_point",
+   "rva": "0x2f2760"
+  },
+  {
+   "ord": 194,
+   "name": "cairo_region_contains_rectangle",
+   "rva": "0x2f27b0"
+  },
+  {
+   "ord": 195,
+   "name": "cairo_region_copy",
+   "rva": "0x2f2850"
+  },
+  {
+   "ord": 196,
+   "name": "cairo_region_create",
+   "rva": "0x2f2920"
+  },
+  {
+   "ord": 197,
+   "name": "cairo_region_create_rectangle",
+   "rva": "0x2f2960"
+  },
+  {
+   "ord": 198,
+   "name": "cairo_region_create_rectangles",
+   "rva": "0x2f29d0"
+  },
+  {
+   "ord": 199,
+   "name": "cairo_region_destroy",
+   "rva": "0x2f2b30"
+  },
+  {
+   "ord": 200,
+   "name": "cairo_region_equal",
+   "rva": "0x2f2b70"
+  },
+  {
+   "ord": 201,
+   "name": "cairo_region_get_extents",
+   "rva": "0x2f2bb0"
+  },
+  {
+   "ord": 202,
+   "name": "cairo_region_get_rectangle",
+   "rva": "0x2f2c00"
+  },
+  {
+   "ord": 203,
+   "name": "cairo_region_intersect",
+   "rva": "0x2f2c70"
+  },
+  {
+   "ord": 204,
+   "name": "cairo_region_intersect_rectangle",
+   "rva": "0x2f2cf0"
+  },
+  {
+   "ord": 205,
+   "name": "cairo_region_is_empty",
+   "rva": "0x2f2d90"
+  },
+  {
+   "ord": 206,
+   "name": "cairo_region_num_rectangles",
+   "rva": "0x2f2dc0"
+  },
+  {
+   "ord": 207,
+   "name": "cairo_region_reference",
+   "rva": "0x2f2de0"
+  },
+  {
+   "ord": 208,
+   "name": "cairo_region_status",
+   "rva": "0x2f2e10"
+  },
+  {
+   "ord": 209,
+   "name": "cairo_region_subtract",
+   "rva": "0x2f2e20"
+  },
+  {
+   "ord": 210,
+   "name": "cairo_region_subtract_rectangle",
+   "rva": "0x2f2ea0"
+  },
+  {
+   "ord": 211,
+   "name": "cairo_region_translate",
+   "rva": "0x2f2f40"
+  },
+  {
+   "ord": 212,
+   "name": "cairo_region_union",
+   "rva": "0x2f2f50"
+  },
+  {
+   "ord": 213,
+   "name": "cairo_region_union_rectangle",
+   "rva": "0x2f2fd0"
+  },
+  {
+   "ord": 214,
+   "name": "cairo_region_xor",
+   "rva": "0x2f3070"
+  },
+  {
+   "ord": 215,
+   "name": "cairo_region_xor_rectangle",
+   "rva": "0x2f3160"
+  },
+  {
+   "ord": 216,
+   "name": "cairo_rel_curve_to",
+   "rva": "0x2caf50"
+  },
+  {
+   "ord": 217,
+   "name": "cairo_rel_line_to",
+   "rva": "0x2cafc0"
+  },
+  {
+   "ord": 218,
+   "name": "cairo_rel_move_to",
+   "rva": "0x2cb000"
+  },
+  {
+   "ord": 219,
+   "name": "cairo_reset_clip",
+   "rva": "0x2cb040"
+  },
+  {
+   "ord": 220,
+   "name": "cairo_restore",
+   "rva": "0x2cb080"
+  },
+  {
+   "ord": 221,
+   "name": "cairo_rotate",
+   "rva": "0x2cb0c0"
+  },
+  {
+   "ord": 222,
+   "name": "cairo_save",
+   "rva": "0x2cb100"
+  },
+  {
+   "ord": 223,
+   "name": "cairo_scale",
+   "rva": "0x2cb140"
+  },
+  {
+   "ord": 224,
+   "name": "cairo_scaled_font_create",
+   "rva": "0x2d38b0"
+  },
+  {
+   "ord": 225,
+   "name": "cairo_scaled_font_destroy",
+   "rva": "0x2d3e40"
+  },
+  {
+   "ord": 226,
+   "name": "cairo_scaled_font_extents",
+   "rva": "0x2d3f30"
+  },
+  {
+   "ord": 227,
+   "name": "cairo_scaled_font_get_ctm",
+   "rva": "0x2d3f70"
+  },
+  {
+   "ord": 228,
+   "name": "cairo_scaled_font_get_font_face",
+   "rva": "0x2d3fa0"
+  },
+  {
+   "ord": 229,
+   "name": "cairo_scaled_font_get_font_matrix",
+   "rva": "0x2d3fc0"
+  },
+  {
+   "ord": 230,
+   "name": "cairo_scaled_font_get_font_options",
+   "rva": "0x2d3ff0"
+  },
+  {
+   "ord": 231,
+   "name": "cairo_scaled_font_get_reference_count",
+   "rva": "0x2d4040"
+  },
+  {
+   "ord": 232,
+   "name": "cairo_scaled_font_get_scale_matrix",
+   "rva": "0x2d4050"
+  },
+  {
+   "ord": 233,
+   "name": "cairo_scaled_font_get_type",
+   "rva": "0x2d4080"
+  },
+  {
+   "ord": 234,
+   "name": "cairo_scaled_font_get_user_data",
+   "rva": "0x2d40a0"
+  },
+  {
+   "ord": 235,
+   "name": "cairo_scaled_font_glyph_extents",
+   "rva": "0x2d40b0"
+  },
+  {
+   "ord": 236,
+   "name": "cairo_scaled_font_reference",
+   "rva": "0x2d4310"
+  },
+  {
+   "ord": 237,
+   "name": "cairo_scaled_font_set_user_data",
+   "rva": "0x2d4340"
+  },
+  {
+   "ord": 238,
+   "name": "cairo_scaled_font_status",
+   "rva": "0x2d4360"
+  },
+  {
+   "ord": 239,
+   "name": "cairo_scaled_font_text_extents",
+   "rva": "0x2d4370"
+  },
+  {
+   "ord": 240,
+   "name": "cairo_scaled_font_text_to_glyphs",
+   "rva": "0x2d45c0"
+  },
+  {
+   "ord": 241,
+   "name": "cairo_select_font_face",
+   "rva": "0x2cb180"
+  },
+  {
+   "ord": 242,
+   "name": "cairo_set_antialias",
+   "rva": "0x2cb200"
+  },
+  {
+   "ord": 243,
+   "name": "cairo_set_dash",
+   "rva": "0x2cb240"
+  },
+  {
+   "ord": 244,
+   "name": "cairo_set_fill_rule",
+   "rva": "0x2cb280"
+  },
+  {
+   "ord": 245,
+   "name": "cairo_set_font_face",
+   "rva": "0x2cb2c0"
+  },
+  {
+   "ord": 246,
+   "name": "cairo_set_font_matrix",
+   "rva": "0x2cb300"
+  },
+  {
+   "ord": 247,
+   "name": "cairo_set_font_options",
+   "rva": "0x2cb340"
+  },
+  {
+   "ord": 248,
+   "name": "cairo_set_font_size",
+   "rva": "0x2cb3a0"
+  },
+  {
+   "ord": 249,
+   "name": "cairo_set_line_cap",
+   "rva": "0x2cb3e0"
+  },
+  {
+   "ord": 250,
+   "name": "cairo_set_line_join",
+   "rva": "0x2cb420"
+  },
+  {
+   "ord": 251,
+   "name": "cairo_set_line_width",
+   "rva": "0x2cb460"
+  },
+  {
+   "ord": 252,
+   "name": "cairo_set_matrix",
+   "rva": "0x2cb4b0"
+  },
+  {
+   "ord": 253,
+   "name": "cairo_set_miter_limit",
+   "rva": "0x2cb4f0"
+  },
+  {
+   "ord": 254,
+   "name": "cairo_set_operator",
+   "rva": "0x2cb530"
+  },
+  {
+   "ord": 255,
+   "name": "cairo_set_scaled_font",
+   "rva": "0x2cb570"
+  },
+  {
+   "ord": 256,
+   "name": "cairo_set_source",
+   "rva": "0x2cb5d0"
+  },
+  {
+   "ord": 257,
+   "name": "cairo_set_source_rgb",
+   "rva": "0x2cb620"
+  },
+  {
+   "ord": 258,
+   "name": "cairo_set_source_rgba",
+   "rva": "0x2cb670"
+  },
+  {
+   "ord": 259,
+   "name": "cairo_set_source_surface",
+   "rva": "0x2cb6c0"
+  },
+  {
+   "ord": 260,
+   "name": "cairo_set_tolerance",
+   "rva": "0x2cb710"
+  },
+  {
+   "ord": 261,
+   "name": "cairo_set_user_data",
+   "rva": "0x2cb750"
+  },
+  {
+   "ord": 262,
+   "name": "cairo_show_glyphs",
+   "rva": "0x2cb770"
+  },
+  {
+   "ord": 263,
+   "name": "cairo_show_page",
+   "rva": "0x2cb7d0"
+  },
+  {
+   "ord": 264,
+   "name": "cairo_show_text",
+   "rva": "0x2cb810"
+  },
+  {
+   "ord": 265,
+   "name": "cairo_show_text_glyphs",
+   "rva": "0x2cbad0"
+  },
+  {
+   "ord": 266,
+   "name": "cairo_status",
+   "rva": "0x2cbc80"
+  },
+  {
+   "ord": 267,
+   "name": "cairo_status_to_string",
+   "rva": "0x2d0d20"
+  },
+  {
+   "ord": 268,
+   "name": "cairo_stroke",
+   "rva": "0x2cbc90"
+  },
+  {
+   "ord": 269,
+   "name": "cairo_stroke_extents",
+   "rva": "0x2cbcd0"
+  },
+  {
+   "ord": 270,
+   "name": "cairo_stroke_preserve",
+   "rva": "0x2cbd50"
+  },
+  {
+   "ord": 271,
+   "name": "cairo_surface_copy_page",
+   "rva": "0x2cdce0"
+  },
+  {
+   "ord": 272,
+   "name": "cairo_surface_create_similar",
+   "rva": "0x2cdd50"
+  },
+  {
+   "ord": 273,
+   "name": "cairo_surface_create_similar_image",
+   "rva": "0x2cdf00"
+  },
+  {
+   "ord": 274,
+   "name": "cairo_surface_destroy",
+   "rva": "0x2cdfd0"
+  },
+  {
+   "ord": 275,
+   "name": "cairo_surface_finish",
+   "rva": "0x2ce070"
+  },
+  {
+   "ord": 276,
+   "name": "cairo_surface_flush",
+   "rva": "0x2ce0c0"
+  },
+  {
+   "ord": 277,
+   "name": "cairo_surface_get_content",
+   "rva": "0x2ce110"
+  },
+  {
+   "ord": 278,
+   "name": "cairo_surface_get_device",
+   "rva": "0x2ce120"
+  },
+  {
+   "ord": 279,
+   "name": "cairo_surface_get_device_offset",
+   "rva": "0x2ce140"
+  },
+  {
+   "ord": 280,
+   "name": "cairo_surface_get_device_scale",
+   "rva": "0x2ce160"
+  },
+  {
+   "ord": 281,
+   "name": "cairo_surface_get_fallback_resolution",
+   "rva": "0x2ce180"
+  },
+  {
+   "ord": 282,
+   "name": "cairo_surface_get_font_options",
+   "rva": "0x2ce1a0"
+  },
+  {
+   "ord": 283,
+   "name": "cairo_surface_get_mime_data",
+   "rva": "0x2ce230"
+  },
+  {
+   "ord": 284,
+   "name": "cairo_surface_get_reference_count",
+   "rva": "0x2ce300"
+  },
+  {
+   "ord": 285,
+   "name": "cairo_surface_get_type",
+   "rva": "0x2ce310"
+  },
+  {
+   "ord": 286,
+   "name": "cairo_surface_get_user_data",
+   "rva": "0x2ce320"
+  },
+  {
+   "ord": 287,
+   "name": "cairo_surface_has_show_text_glyphs",
+   "rva": "0x2ce340"
+  },
+  {
+   "ord": 288,
+   "name": "cairo_surface_map_to_image",
+   "rva": "0x2ce3a0"
+  },
+  {
+   "ord": 289,
+   "name": "cairo_surface_mark_dirty",
+   "rva": "0x2ce4e0"
+  },
+  {
+   "ord": 290,
+   "name": "cairo_surface_mark_dirty_rectangle",
+   "rva": "0x2ce5a0"
+  },
+  {
+   "ord": 291,
+   "name": "cairo_surface_reference",
+   "rva": "0x2ce6c0"
+  },
+  {
+   "ord": 292,
+   "name": "cairo_surface_set_device_offset",
+   "rva": "0x2ce6f0"
+  },
+  {
+   "ord": 293,
+   "name": "cairo_surface_set_device_scale",
+   "rva": "0x2ce7f0"
+  },
+  {
+   "ord": 294,
+   "name": "cairo_surface_set_fallback_resolution",
+   "rva": "0x2ce8f0"
+  },
+  {
+   "ord": 295,
+   "name": "cairo_surface_set_mime_data",
+   "rva": "0x2ce9b0"
+  },
+  {
+   "ord": 296,
+   "name": "cairo_surface_set_user_data",
+   "rva": "0x2ceaf0"
+  },
+  {
+   "ord": 297,
+   "name": "cairo_surface_show_page",
+   "rva": "0x2ceb20"
+  },
+  {
+   "ord": 298,
+   "name": "cairo_surface_status",
+   "rva": "0x2cebd0"
+  },
+  {
+   "ord": 299,
+   "name": "cairo_surface_supports_mime_type",
+   "rva": "0x2cebe0"
+  },
+  {
+   "ord": 300,
+   "name": "cairo_surface_unmap_image",
+   "rva": "0x2cecc0"
+  },
+  {
+   "ord": 301,
+   "name": "cairo_tag_begin",
+   "rva": "0x2cbd90"
+  },
+  {
+   "ord": 302,
+   "name": "cairo_tag_end",
+   "rva": "0x2cbdd0"
+  },
+  {
+   "ord": 303,
+   "name": "cairo_text_cluster_allocate",
+   "rva": "0x2d0f50"
+  },
+  {
+   "ord": 304,
+   "name": "cairo_text_cluster_free",
+   "rva": "0x2d0f80"
+  },
+  {
+   "ord": 305,
+   "name": "cairo_text_extents",
+   "rva": "0x2cbe10"
+  },
+  {
+   "ord": 306,
+   "name": "cairo_text_path",
+   "rva": "0x2cbf70"
+  },
+  {
+   "ord": 307,
+   "name": "cairo_toy_font_face_create",
+   "rva": "0x2d50e0"
+  },
+  {
+   "ord": 308,
+   "name": "cairo_toy_font_face_get_family",
+   "rva": "0x2d52f0"
+  },
+  {
+   "ord": 309,
+   "name": "cairo_toy_font_face_get_slant",
+   "rva": "0x2d5340"
+  },
+  {
+   "ord": 310,
+   "name": "cairo_toy_font_face_get_weight",
+   "rva": "0x2d5380"
+  },
+  {
+   "ord": 311,
+   "name": "cairo_transform",
+   "rva": "0x2cc140"
+  },
+  {
+   "ord": 312,
+   "name": "cairo_translate",
+   "rva": "0x2cc180"
+  },
+  {
+   "ord": 313,
+   "name": "cairo_user_font_face_create",
+   "rva": "0x2eb490"
+  },
+  {
+   "ord": 314,
+   "name": "cairo_user_font_face_get_init_func",
+   "rva": "0x2eb4f0"
+  },
+  {
+   "ord": 315,
+   "name": "cairo_user_font_face_get_render_glyph_func",
+   "rva": "0x2eb530"
+  },
+  {
+   "ord": 316,
+   "name": "cairo_user_font_face_get_text_to_glyphs_func",
+   "rva": "0x2eb570"
+  },
+  {
+   "ord": 317,
+   "name": "cairo_user_font_face_get_unicode_to_glyph_func",
+   "rva": "0x2eb5b0"
+  },
+  {
+   "ord": 318,
+   "name": "cairo_user_font_face_set_init_func",
+   "rva": "0x2eb5f0"
+  },
+  {
+   "ord": 319,
+   "name": "cairo_user_font_face_set_render_glyph_func",
+   "rva": "0x2eb650"
+  },
+  {
+   "ord": 320,
+   "name": "cairo_user_font_face_set_text_to_glyphs_func",
+   "rva": "0x2eb6b0"
+  },
+  {
+   "ord": 321,
+   "name": "cairo_user_font_face_set_unicode_to_glyph_func",
+   "rva": "0x2eb710"
+  },
+  {
+   "ord": 322,
+   "name": "cairo_user_to_device",
+   "rva": "0x2cc1c0"
+  },
+  {
+   "ord": 323,
+   "name": "cairo_user_to_device_distance",
+   "rva": "0x2cc1e0"
+  },
+  {
+   "ord": 324,
+   "name": "cairo_win32_font_face_create_for_hfont",
+   "rva": "0x2ee260"
+  },
+  {
+   "ord": 325,
+   "name": "cairo_win32_font_face_create_for_logfontw",
+   "rva": "0x2ee2d0"
+  },
+  {
+   "ord": 326,
+   "name": "cairo_win32_font_face_create_for_logfontw_hfont",
+   "rva": "0x2ee2e0"
+  },
+  {
+   "ord": 327,
+   "name": "cairo_win32_scaled_font_done_font",
+   "rva": "0x2ee460"
+  },
+  {
+   "ord": 328,
+   "name": "cairo_win32_scaled_font_get_device_to_logical",
+   "rva": "0x2ee480"
+  },
+  {
+   "ord": 329,
+   "name": "cairo_win32_scaled_font_get_logical_to_device",
+   "rva": "0x2ee4e0"
+  },
+  {
+   "ord": 330,
+   "name": "cairo_win32_scaled_font_get_metrics_factor",
+   "rva": "0x2ee540"
+  },
+  {
+   "ord": 331,
+   "name": "cairo_win32_scaled_font_select_font",
+   "rva": "0x2ee580"
+  },
+  {
+   "ord": 332,
+   "name": "cairo_win32_surface_create",
+   "rva": "0x30d0b0"
+  },
+  {
+   "ord": 333,
+   "name": "cairo_win32_surface_create_with_ddb",
+   "rva": "0x30d0c0"
+  },
+  {
+   "ord": 334,
+   "name": "cairo_win32_surface_create_with_dib",
+   "rva": "0x30d1d0"
+  },
+  {
+   "ord": 335,
+   "name": "cairo_win32_surface_create_with_format",
+   "rva": "0x30d210"
+  },
+  {
+   "ord": 336,
+   "name": "cairo_win32_surface_get_dc",
+   "rva": "0x30d790"
+  },
+  {
+   "ord": 337,
+   "name": "cairo_win32_surface_get_image",
+   "rva": "0x30d7e0"
+  }
+ ],
+ "imports": [
+  {
+   "dll": "OPENGL32.dll",
+   "count": 26,
+   "funcs": [
+    "glGetIntegerv",
+    "wglMakeCurrent",
+    "wglGetCurrentDC",
+    "wglGetCurrentContext",
+    "wglDeleteContext",
+    "wglCreateContext",
+    "wglGetProcAddress",
+    "glEnable",
+    "glDisable",
+    "glBlendFunc",
+    "glGetError",
+    "glViewport",
+    "glTexSubImage2D",
+    "glGetString",
+    "glTexParameteri",
+    "glTexImage2D",
+    "glReadPixels",
+    "glReadBuffer",
+    "glPixelStorei",
+    "glGenTextures",
+    "glFinish",
+    "glDeleteTextures",
+    "glColorMask",
+    "glClearColor",
+    "glClear",
+    "glBindTexture"
+   ]
+  },
+  {
+   "dll": "SHLWAPI.dll",
+   "count": 1,
+   "funcs": [
+    "PathRemoveFileSpecA"
+   ]
+  },
+  {
+   "dll": "SHELL32.dll",
+   "count": 4,
+   "funcs": [
+    "SHGetKnownFolderPath",
+    "ShellExecuteW",
+    "ShellExecuteA",
+    "SHGetFolderPathA"
+   ]
+  },
+  {
+   "dll": "ole32.dll",
+   "count": 1,
+   "funcs": [
+    "CoTaskMemFree"
+   ]
+  },
+  {
+   "dll": "KERNEL32.dll",
+   "count": 73,
+   "funcs": [
+    "CloseHandle",
+    "EnterCriticalSection",
+    "LeaveCriticalSection",
+    "InitializeCriticalSection",
+    "DeleteCriticalSection",
+    "GetVersionExA",
+    "LocalFree",
+    "FormatMessageW",
+    "LoadLibraryW",
+    "CreateDirectoryA",
+    "CreateFileA",
+    "SetFileAttributesA",
+    "SetFileTime",
+    "Sleep",
+    "GetSystemTime",
+    "SystemTimeToFileTime",
+    "GetTempPathW",
+    "SetUnhandledExceptionFilter",
+    "UnhandledExceptionFilter",
+    "RtlVirtualUnwind",
+    "GetTempFileNameW",
+    "RtlCaptureContext",
+    "CreateEventW",
+    "WaitForSingleObjectEx",
+    "ResetEvent",
+    "SetEvent",
+    "InitializeCriticalSectionAndSpinCount",
+    "MultiByteToWideChar",
+    "CreateHardLinkW",
+    "MoveFileExW",
+    "CopyFileW",
+    "CreateDirectoryExW",
+    "DeviceIoControl",
+    "SetLastError",
+    "AreFileApisANSI",
+    "SetFileAttributesW",
+    "RemoveDirectoryW",
+    "GetFullPathNameW",
+    "GetFileInformationByHandle",
+    "GetFileAttributesExW",
+    "GetFileAttributesW",
+    "GetDiskFreeSpaceExW",
+    "FindNextFileW",
+    "DeleteFileW",
+    "CreateFileW",
+    "GetProcAddress",
+    "GetModuleHandleW",
+    "GetCurrentThreadId",
+    "WideCharToMultiByte",
+    "CreateDirectoryW",
+    "LoadLibraryA",
+    "GetLastError",
+    "GetCurrentProcess",
+    "TerminateProcess",
+    "IsProcessorFeaturePresent",
+    "IsDebuggerPresent",
+    "GetStartupInfoW",
+    "QueryPerformanceCounter",
+    "GetCurrentProcessId",
+    "GetSystemTimeAsFileTime",
+    "DisableThreadLibraryCalls",
+    "InitializeSListHead",
+    "RaiseException",
+    "GetSystemInfo",
+    "VirtualProtect",
+    "VirtualQuery",
+    "FreeLibrary",
+    "LoadLibraryExA",
+    "SetCurrentDirectoryW",
+    "GetCurrentDirectoryW",
+    "FindClose",
+    "FindFirstFileExW",
+    "RtlLookupFunctionEntry"
+   ]
+  },
+  {
+   "dll": "USER32.dll",
+   "count": 25,
+   "funcs": [
+    "SetWindowTextA",
+    "DefWindowProcA",
+    "GetWindowRect",
+    "CreateWindowExA",
+    "UnregisterClassA",
+    "GetDesktopWindow",
+    "LoadIconA",
+    "GetDC",
+    "DestroyWindow",
+    "SetWindowLongPtrA",
+    "RegisterClassExA",
+    "ShowWindow",
+    "EnableWindow",
+    "SetFocus",
+    "GetWindowLongPtrA",
+    "LoadCursorA",
+    "GetMessageA",
+    "TranslateMessage",
+    "DispatchMessageA",
+    "SendMessageA",
+    "ReleaseDC",
+    "FillRect",
+    "SystemParametersInfoA",
+    "PostMessageA",
+    "SetWindowPos"
+   ]
+  },
+  {
+   "dll": "GDI32.dll",
+   "count": 42,
+   "funcs": [
+    "ChoosePixelFormat",
+    "StretchDIBits",
+    "CreateSolidBrush",
+    "GetDeviceCaps",
+    "GdiFlush",
+    "CreateDIBSection",
+    "GetWorldTransform",
+    "ExtSelectClipRgn",
+    "SelectClipRgn",
+    "IntersectClipRect",
+    "GetGraphicsMode",
+    "GetClipRgn",
+    "GetClipBox",
+    "ExtCreateRegion",
+    "CreateRectRgn",
+    "CreateCompatibleBitmap",
+    "BitBlt",
+    "ExtTextOutW",
+    "GetObjectW",
+    "ModifyWorldTransform",
+    "SetWorldTransform",
+    "GetTextMetricsA",
+    "SetTextAlign",
+    "SetTextColor",
+    "SetMapMode",
+    "SetGraphicsMode",
+    "SetBkMode",
+    "SelectObject",
+    "SaveDC",
+    "RestoreDC",
+    "GetGlyphIndicesW",
+    "GetFontUnicodeRanges",
+    "GetOutlineTextMetricsA",
+    "GetGlyphOutlineW",
+    "GetFontData",
+    "GetCharWidth32A",
+    "DeleteObject",
+    "DeleteDC",
+    "CreateFontIndirectW",
+    "CreateCompatibleDC",
+    "SetPixelFormat",
+    "GetStockObject"
+   ]
+  },
+  {
+   "dll": "ADVAPI32.dll",
+   "count": 1,
+   "funcs": [
+    "GetUserNameA"
+   ]
+  },
+  {
+   "dll": "MSVCP140.dll",
+   "count": 136,
+   "funcs": [
+    "_Cnd_do_broadcast_at_thread_exit",
+    "?_Throw_Cpp_error@std@@YAXH@Z",
+    "_Cnd_destroy",
+    "_Cnd_init",
+    "_Mtx_destroy",
+    "_Cnd_signal",
+    "_Thrd_detach",
+    "_Thrd_start",
+    "?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z",
+    "?tellg@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA?AV?$fpos@U_Mbstatet@@@2@XZ",
+    "?seekg@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@_JH@Z",
+    "?read@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@PEAD_J@Z",
+    "_Mtx_init",
+    "_Cnd_wait",
+    "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A",
+    "?_Xbad_alloc@std@@YAXXZ",
+    "_Mbrtowc",
+    "?_Getcvt@_Locinfo@std@@QEBA?AU_Cvtvec@@XZ",
+    "?_W_Getdays@_Locinfo@std@@QEBAPEBGXZ",
+    "?_W_Getmonths@_Locinfo@std@@QEBAPEBGXZ",
+    "?uncaught_exception@std@@YA_NXZ",
+    "?_Xlength_error@std@@YAXPEBD@Z",
+    "?_Xout_of_range@std@@YAXPEBD@Z",
+    "??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ",
+    "?swap@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXAEAV12@@Z",
+    "??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+    "?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z",
+    "?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z",
+    "?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ",
+    "??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+    "?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z",
+    "??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ",
+    "?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ",
+    "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z",
+    "?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ",
+    "??0?$basic_iostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@@Z",
+    "?swap@?$basic_iostream@DU?$char_traits@D@std@@@std@@IEAAXAEAV12@@Z",
+    "??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+    "?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ",
+    "?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ",
+    "?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z",
+    "?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z",
+    "?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ",
+    "?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ",
+    "?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ",
+    "?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z",
+    "?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z",
+    "?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z",
+    "??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z",
+    "??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+    "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAVios_base@1@AEAV21@@Z@Z",
+    "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z",
+    "?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z",
+    "??0_Lockit@std@@QEAA@H@Z",
+    "??1_Lockit@std@@QEAA@XZ",
+    "??Bid@locale@std@@QEAA_KXZ",
+    "?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ",
+    "?always_noconv@codecvt_base@std@@QEBA_NXZ",
+    "?in@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAD3AEAPEAD@Z",
+    "?out@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAD3AEAPEAD@Z",
+    "?unshift@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEAD1AEAPEAD@Z",
+    "?_Getcat@?$codecvt@DDU_Mbstatet@@@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z",
+    "?getloc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEBA?AVlocale@2@XZ",
+    "?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ",
+    "?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ",
+    "?snextc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ",
+    "?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXXZ",
+    "?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z",
+    "??0?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z",
+    "??1?$basic_istream@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+    "?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA_N_N@Z",
+    "?_Fiopen@std@@YAPEAU_iobuf@@PEBDHH@Z",
+    "?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A",
+    "?_Getcat@?$ctype@D@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z",
+    "?getloc@ios_base@std@@QEBA?AVlocale@2@XZ",
+    "_Mtx_init_in_situ",
+    "_Mtx_destroy_in_situ",
+    "_Mtx_lock",
+    "_Mtx_unlock",
+    "?_Throw_C_error@std@@YAXH@Z",
+    "?id@?$ctype@D@std@@2V0locale@2@A",
+    "?_Execute_once@std@@YAHAEAUonce_flag@1@P6AHPEAX1PEAPEAX@Z1@Z",
+    "?_Syserror_map@std@@YAPEBDH@Z",
+    "?_Winerror_map@std@@YAHH@Z",
+    "?_Winerror_message@std@@YAKKPEADK@Z",
+    "??4?$_Yarn@D@std@@QEAAAEAV01@PEBD@Z",
+    "?_New_Locimp@_Locimp@locale@std@@CAPEAV123@AEBV123@@Z",
+    "?_Locimp_Addfac@_Locimp@locale@std@@CAXPEAV123@PEAVfacet@23@_K@Z",
+    "?_Init@locale@std@@CAPEAV_Locimp@12@_N@Z",
+    "?in@?$codecvt@_WDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEA_W3AEAPEA_W@Z",
+    "?out@?$codecvt@_WDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEB_W1AEAPEB_WPEAD3AEAPEAD@Z",
+    "?unshift@?$codecvt@_WDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEAD1AEAPEAD@Z",
+    "??0?$codecvt@_WDU_Mbstatet@@@std@@QEAA@_K@Z",
+    "?_Getcat@?$codecvt@_WDU_Mbstatet@@@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z",
+    "??1?$codecvt@_WDU_Mbstatet@@@std@@MEAA@XZ",
+    "?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+    "?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+    "?pbase@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+    "?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+    "?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+    "??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ",
+    "??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ",
+    "?getloc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEBA?AVlocale@2@XZ",
+    "?sputc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAAG_W@Z",
+    "?sputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAA_JPEB_W_J@Z",
+    "?_Pninc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAPEA_WXZ",
+    "?_Init@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXXZ",
+    "?xsgetn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JPEA_W_J@Z",
+    "?xsputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JPEB_W_J@Z",
+    "??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ",
+    "?clear@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAAXH_N@Z",
+    "?setstate@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAAXH_N@Z",
+    "?widen@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBA_WD@Z",
+    "??0?$basic_ios@_WU?$char_traits@_W@std@@@std@@IEAA@XZ",
+    "??0?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAA@PEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@1@_N@Z",
+    "??1?$basic_ostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ",
+    "??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEA_K@Z",
+    "??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z",
+    "?put@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@_W@Z",
+    "?flush@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@XZ",
+    "_Xtime_get_ticks",
+    "?put@?$time_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@QEBA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AEAVios_base@2@DPEBUtm@@PEBD3@Z",
+    "?_Getcat@?$time_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z",
+    "?_Fiopen@std@@YAPEAU_iobuf@@PEB_WHH@Z",
+    "?_Decref@facet@locale@std@@UEAAPEAV_Facet_base@3@XZ",
+    "?_Incref@facet@locale@std@@UEAAXXZ",
+    "?showmanyc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JXZ",
+    "?id@?$codecvt@_WDU_Mbstatet@@@std@@2V0locale@2@A",
+    "?id@?$time_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A",
+    "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z",
+    "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_N@Z",
+    "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z",
+    "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_J@Z",
+    "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_K@Z",
+    "?write@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@PEBD_J@Z",
+    "?_Osfx@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAXXZ"
+   ]
+  },
+  {
+   "dll": "WININET.dll",
+   "count": 8,
+   "funcs": [
+    "InternetConnectA",
+    "InternetCloseHandle",
+    "InternetOpenA",
+    "HttpOpenRequestA",
+    "HttpQueryInfoA",
+    "InternetReadFile",
+    "HttpSendRequestA",
+    "InternetSetOptionA"
+   ]
+  },
+  {
+   "dll": "VCRUNTIME140.dll",
+   "count": 16,
+   "funcs": [
+    "__std_terminate",
+    "__CxxFrameHandler3",
+    "_CxxThrowException",
+    "__std_type_info_destroy_list",
+    "__intrinsic_setjmp",
+    "__C_specific_handler",
+    "strchr",
+    "memcpy",
+    "memchr",
+    "__std_exception_destroy",
+    "__std_exception_copy",
+    "strrchr",
+    "memset",
+    "memmove",
+    "memcmp",
+    "longjmp"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+   "count": 5,
+   "funcs": [
+    "malloc",
+    "_callnewh",
+    "realloc",
+    "free",
+    "calloc"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+   "count": 16,
+   "funcs": [
+    "_wassert",
+    "_invalid_parameter_noinfo_noreturn",
+    "_initialize_narrow_environment",
+    "_errno",
+    "terminate",
+    "_getpid",
+    "_initterm_e",
+    "_initterm",
+    "_cexit",
+    "_crt_at_quick_exit",
+    "_crt_atexit",
+    "_execute_onexit_table",
+    "_register_onexit_function",
+    "_initialize_onexit_table",
+    "_configure_narrow_argv",
+    "_seh_filter_dll"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+   "count": 25,
+   "funcs": [
+    "fgetpos",
+    "fgetc",
+    "fflush",
+    "fputc",
+    "fopen",
+    "ferror",
+    "fclose",
+    "fread",
+    "fsetpos",
+    "_fseeki64",
+    "fwrite",
+    "setvbuf",
+    "_open_osfhandle",
+    "_close",
+    "__stdio_common_vsscanf",
+    "__stdio_common_vfprintf",
+    "__acrt_iob_func",
+    "ungetc",
+    "__stdio_common_vsprintf_s",
+    "__stdio_common_vsprintf",
+    "_get_stream_buffer_pointers",
+    "fopen_s",
+    "fgetwc",
+    "fputwc",
+    "ungetwc"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-filesystem-l1-1-0.dll",
+   "count": 5,
+   "funcs": [
+    "remove",
+    "_lock_file",
+    "_mkdir",
+    "_unlock_file",
+    "_waccess"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-math-l1-1-0.dll",
+   "count": 21,
+   "funcs": [
+    "acos",
+    "ceilf",
+    "log2",
+    "tan",
+    "cosf",
+    "sqrt",
+    "_fdopen",
+    "sqrtf",
+    "cos",
+    "atan2",
+    "floor",
+    "floorf",
+    "sin",
+    "frexp",
+    "_hypot",
+    "sinf",
+    "fmod",
+    "ceil",
+    "pow",
+    "powf",
+    "modf"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-time-l1-1-0.dll",
+   "count": 3,
+   "funcs": [
+    "asctime",
+    "_localtime64",
+    "_time64"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-utility-l1-1-0.dll",
+   "count": 3,
+   "funcs": [
+    "srand",
+    "rand",
+    "qsort"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-string-l1-1-0.dll",
+   "count": 8,
+   "funcs": [
+    "strpbrk",
+    "strncpy",
+    "tolower",
+    "wcscpy_s",
+    "_strdup",
+    "strncmp",
+    "toupper",
+    "isxdigit"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-convert-l1-1-0.dll",
+   "count": 4,
+   "funcs": [
+    "atol",
+    "strtol",
+    "atoi",
+    "_strtoi64"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-locale-l1-1-0.dll",
+   "count": 2,
+   "funcs": [
+    "localeconv",
+    "___lc_codepage_func"
+   ]
+  },
+  {
+   "dll": "api-ms-win-crt-environment-l1-1-0.dll",
+   "count": 1,
+   "funcs": [
+    "getenv"
+   ]
+  },
+  {
+   "dll": "WS2_32.dll",
+   "count": 23,
+   "funcs": [
+    "__WSAFDIsSet",
+    "select",
+    "send",
+    "sendto",
+    "setsockopt",
+    "socket",
+    "closesocket",
+    "WSAStartup",
+    "WSACleanup",
+    "WSAGetLastError",
+    "getaddrinfo",
+    "freeaddrinfo",
+    "inet_ntop",
+    "connect",
+    "bind",
+    "ioctlsocket",
+    "recvfrom",
+    "getsockname",
+    "htonl",
+    "htons",
+    "inet_addr",
+    "recv",
+    "gethostname"
+   ]
+  },
+  {
+   "dll": "IPHLPAPI.DLL",
+   "count": 1,
+   "funcs": [
+    "GetAdaptersInfo"
+   ]
+  }
+ ],
+ "delay_imports": [
+  {
+   "dll": "IrisBlurSDK.dll",
+   "funcs": [
+    "DeletePipelineCtx",
+    "CreateIrisBlurImageCacheGL",
+    "IrisBlurGL",
+    "IrisBlurDisposeBlurCacheGL",
+    "CreateIrisPipelineOBJ"
+   ]
+  }
+ ]
+}

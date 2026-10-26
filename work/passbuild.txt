@@ -1,0 +1,151 @@
+0000e61d  mov rax, qword ptr [rip + 0x42ec74]
+0000e638  divss xmm9, dword ptr [rcx + 0x700c]
+0000e64d  movss xmm7, dword ptr [rip + 0x3ce0a7]  ; f32=1.0
+0000e657  jle 0x18000e691
+0000e659  movsd xmm2, qword ptr [rip + 0x3ce0af]  ; f64=0.5
+0000e676  comiss xmm7, xmm1
+0000e681  jae 0x18000e689
+0000e685  jl 0x18000e661
+0000e687  jmp 0x18000e691  -> 0000e691
+0000e691  movsd xmm6, qword ptr [rip + 0x3ce097]  ; f64=1.0
+0000e6cf  jle 0x18000eb97
+0000e6d5  movsd xmm10, qword ptr [rip + 0x3ce02a]  ; f64=0.2
+0000e70f  jne 0x18000e74d
+0000e728  jne 0x18000e73d
+0000e738  jmp 0x18000e7c8  -> 0000e7c8
+0000e740  jl 0x18000e72a
+0000e74b  jmp 0x18000e7c8  -> 0000e7c8
+0000e779  jbe 0x18000efe4
+0000e7ab  mulss xmm0, dword ptr [rax + r8]
+0000e7bd  jne 0x18000e7c8
+0000e7d7  je 0x18000e82f
+0000e82d  jmp 0x18000e83c  -> 0000e83c
+0000e837  call 0x18000ce10  -> 0000ce10
+0000e84a  jne 0x18000e8df
+0000e86e  jbe 0x18000efe4
+0000e899  jbe 0x18000e8a0
+0000e89e  jmp 0x18000e8a3  -> 0000e8a3
+0000e8ac  jbe 0x18000e8cc
+0000e8b2  ja 0x18000e8b7
+0000e8c7  jmp 0x18000eb84  -> 0000eb84
+0000e8da  jmp 0x18000eb84  -> 0000eb84
+0000e904  jbe 0x18000efe4
+0000e915  je 0x18000eb3e
+0000e921  ja 0x18000eb3e
+0000e934  jmp rcx
+0000e93d  subss xmm1, xmm8
+0000e942  divss xmm1, dword ptr [rip + 0x3cde7e]  ; f32=20.0
+0000e94a  comiss xmm1, xmm8
+0000e94e  jbe 0x18000e954
+0000e950  cvtss2sd xmm0, xmm1
+0000e958  comiss xmm7, xmm1
+0000e95b  jbe 0x18000eb37
+0000e964  jmp 0x18000eb3a  -> 0000eb3a
+0000e970  subss xmm1, xmm8
+0000e975  divss xmm1, dword ptr [rip + 0x3cde57]  ; f32=40.0
+0000e97d  comiss xmm1, xmm8
+0000e981  jbe 0x18000e987
+0000e983  cvtss2sd xmm0, xmm1
+0000e98b  comiss xmm7, xmm1
+0000e98e  jbe 0x18000eb37
+0000e997  jmp 0x18000eb3a  -> 0000eb3a
+0000e9a3  subss xmm1, dword ptr [rip + 0x3cde11]  ; f32=5.0
+0000e9ab  divss xmm1, dword ptr [rip + 0x3cde2d]  ; f32=55.0
+0000e9b3  comiss xmm1, xmm8
+0000e9b7  jbe 0x18000e9bd
+0000e9b9  cvtss2sd xmm0, xmm1
+0000e9c1  comiss xmm7, xmm1
+0000e9c4  jbe 0x18000eb37
+0000e9cd  jmp 0x18000eb3a  -> 0000eb3a
+0000e9d9  subss xmm1, dword ptr [rip + 0x3cdde3]  ; f32=10.0
+0000e9e1  divss xmm1, dword ptr [rip + 0x3cddff]  ; f32=70.0
+0000e9e9  comiss xmm1, xmm8
+0000e9ed  jbe 0x18000e9f3
+0000e9ef  cvtss2sd xmm0, xmm1
+0000e9f7  comiss xmm7, xmm1
+0000e9fa  jbe 0x18000eb37
+0000ea03  jmp 0x18000eb3a  -> 0000eb3a
+0000ea0f  subss xmm1, dword ptr [rip + 0x3cddb1]  ; f32=20.0
+0000ea17  divss xmm1, dword ptr [rip + 0x3cddd9]  ; f32=100.0
+0000ea1f  comiss xmm1, xmm8
+0000ea23  jbe 0x18000ea29
+0000ea25  cvtss2sd xmm0, xmm1
+0000ea2d  comiss xmm7, xmm1
+0000ea30  jbe 0x18000eb37
+0000ea39  jmp 0x18000eb3a  -> 0000eb3a
+0000ea45  subss xmm1, dword ptr [rip + 0x3cdd83]  ; f32=35.0
+0000ea4d  divss xmm1, dword ptr [rip + 0x3cdda7]  ; f32=105.0
+0000ea55  comiss xmm1, xmm8
+0000ea59  jbe 0x18000ea5f
+0000ea5b  cvtss2sd xmm0, xmm1
+0000ea63  comiss xmm7, xmm1
+0000ea66  jbe 0x18000eb37
+0000ea6f  jmp 0x18000eb3a  -> 0000eb3a
+0000ea7b  subss xmm1, dword ptr [rip + 0x3cdd61]  ; f32=60.0
+0000ea83  divss xmm1, dword ptr [rip + 0x3cdd6d]  ; f32=100.0
+0000ea8b  comiss xmm1, xmm8
+0000ea8f  jbe 0x18000ea95
+0000ea91  cvtss2sd xmm0, xmm1
+0000ea99  comiss xmm7, xmm1
+0000ea9c  jbe 0x18000eb37
+0000eaa5  jmp 0x18000eb3a  -> 0000eb3a
+0000eab1  subss xmm1, dword ptr [rip + 0x3cdd3b]  ; f32=90.0
+0000eab9  divss xmm1, dword ptr [rip + 0x3cdd33]  ; f32=90.0
+0000eac1  comiss xmm1, xmm8
+0000eac5  jbe 0x18000eacb
+0000eac7  cvtss2sd xmm0, xmm1
+0000eacf  comiss xmm7, xmm1
+0000ead2  jbe 0x18000eb37
+0000ead7  jmp 0x18000eb3a  -> 0000eb3a
+0000eae0  subss xmm1, dword ptr [rip + 0x3cdd18]  ; f32=110.0
+0000eae8  divss xmm1, dword ptr [rip + 0x3cdd10]  ; f32=110.0
+0000eaf0  comiss xmm1, xmm8
+0000eaf4  jbe 0x18000eafa
+0000eaf6  cvtss2sd xmm0, xmm1
+0000eafe  comiss xmm7, xmm1
+0000eb01  jbe 0x18000eb37
+0000eb06  jmp 0x18000eb3a  -> 0000eb3a
+0000eb0f  subss xmm1, dword ptr [rip + 0x3cdcf1]  ; f32=130.0
+0000eb17  divss xmm1, dword ptr [rip + 0x3cdcf1]  ; f32=150.0
+0000eb1f  comiss xmm1, xmm8
+0000eb23  jbe 0x18000eb29
+0000eb25  cvtss2sd xmm0, xmm1
+0000eb2d  comiss xmm7, xmm1
+0000eb30  jbe 0x18000eb37
+0000eb35  jmp 0x18000eb3a  -> 0000eb3a
+0000eb66  jbe 0x18000efe4
+0000eb73  ucomiss xmm0, xmm8
+0000eb77  jp 0x18000eb84
+0000eb79  jne 0x18000eb84
+0000eb91  jl 0x18000e6f0
+0000eb9e  jne 0x18000ec5d
+0000ebd2  jbe 0x18000efe4
+0000ec17  jbe 0x18000efe4
+0000ec2f  jbe 0x18000ec36
+0000ec34  jmp 0x18000ec3f  -> 0000ec3f
+0000ec39  jbe 0x18000efe4
+0000ec42  jbe 0x18000efe4
+0000ec5f  jle 0x18000ef77
+0000ec98  jbe 0x18000efe4
+0000eca8  mulss xmm0, dword ptr [rdi + r8]
+0000ecd3  jbe 0x18000efe4
+0000ed1f  jbe 0x18000efe4
+0000ed66  jbe 0x18000efe4
+0000ed7d  call 0x18036e2fc  -> 0036e2fc
+0000ed86  ja 0x18000ed8b
+0000edbb  jbe 0x18000efe4
+0000edd2  call 0x18036e2fc  -> 0036e2fc
+0000eddb  ja 0x18000ede0
+0000ee10  jbe 0x18000efe4
+0000ee32  call 0x18036e2fc  -> 0036e2fc
+0000ee67  jbe 0x18000efe4
+0000ee89  call 0x18036e2fc  -> 0036e2fc
+0000eebe  jbe 0x18000efe4
+0000ef23  jbe 0x18000efe4
+0000ef71  jl 0x18000ec70
+0000ef7e  jne 0x18000ef8a
+0000efbb  call 0x18036c400  -> 0036c400
+0000efe4  call 0x18001d080  -> 0001d080
+0000efec  jmp 0x16969eff2  -> 1696adfe4
+0000eff5  jmp 0x169d2effa  -> 169d3dff4
+0000f004  je 0x18000eff0

@@ -1,0 +1,150 @@
+id=0x9d type=group 'About & Support' default=None valid=[None,None] slider=[None,None] items='Get Support'
+id=0x9e type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x8d type=group 'Error Logging' default=None valid=[None,None] slider=[None,None] items=None
+id=0x8a type=float '' default=None valid=[None,None] slider=[None,None] items='Open Error Log'
+id=0x8c type=float '' default=None valid=[None,None] slider=[None,None] items='Open Log Directory'
+id=0x8b type=float '' default=None valid=[None,None] slider=[None,None] items='Create Test Error'
+id=0x9f type=None '' default=None valid=[None,None] slider=[None,None] items='Debug Analysis Enable'
+id=0x8e type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x0a type=group '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x0b type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x0c type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x0d type=group "Unlicensed, click 'Register'" default=None valid=[None,None] slider=[None,None] items=None
+id=0x0e type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x0f type=group 'to enter your serial key.' default=None valid=[None,None] slider=[None,None] items=None
+id=0x10 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x80 type=group '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x67 type=None 'Glow Mode' default=None valid=[None,None] slider=[None,None] items='Exponential|Lens Iris'
+id=0x18 type=None 'Blend Mode' default=None valid=[None,None] slider=[None,None] items='Screen|Add'
+id=0x11 type=float 'Radius' default=1000 valid=[None,2000] slider=[None,500] items=None
+id=0x12 type=float 'Exposure' default=1 valid=[None,20] slider=[0.9,1.1] items=None
+id=0x81 type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Main'
+id=0x82 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x13 type=group 'Input' default=None valid=[None,None] slider=[None,None] items=None
+id=0x5f type=None 'Threshold Mode' default=None valid=[None,None] slider=[None,None] items='Chrominance|Luminance'
+id=0x14 type=float 'Threshold' default=None valid=[None,1140457472] slider=[None,200] items=None
+id=0x15 type=float 'Threshold Smooth' default=None valid=[None,1120403456] slider=[None,100] items=None
+id=0x60 type=float 'Saturation Bias' default=None valid=[-100,1120403456] slider=[None,100] items=None
+id=0x95 type=group 'Input Masking' default=None valid=[None,None] slider=[None,None] items=None
+id=0x4a type=group 'Warning: enable cont. raster' default=None valid=[None,None] slider=[None,None] items=None
+id=0x4b type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x4c type=group 'for correct mask behavior' default=None valid=[None,None] slider=[None,None] items=None
+id=0x4d type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x96 type=None 'Mask Layer' default=None valid=[None,None] slider=[None,None] items=None
+id=0x97 type=None 'Mask Mode' default=None valid=[None,None] slider=[None,None] items='Alpha|Luminance'
+id=0x98 type=None 'Mask Invert' default=None valid=[None,None] slider=[None,None] items=''
+id=0x99 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x79 type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Input'
+id=0x16 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x68 type=group '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x69 type=None 'Iris Layer' default=None valid=[None,None] slider=[None,None] items=None
+id=0x6e type=group 'Warning Iris Layer not supplied' default=None valid=[None,None] slider=[None,None] items=None
+id=0x6f type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x70 type=group 'Output will be blank' default=None valid=[None,None] slider=[None,None] items=None
+id=0x71 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x6b type=None 'Iris Sampling Quality' default=None valid=[None,None] slider=[None,None] items='Lowest|Modest|Standard|Fine|Extreme'
+id=0x76 type=None 'Iris Iterations' default=10 valid=[None,None] slider=[None,None] items=None
+id=0x77 type=float 'Radii Easing' default=90 valid=[-100,1120403456] slider=[None,50] items=None
+id=0x7a type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Iris'
+id=0x6a type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x17 type=group 'Style' default=None valid=[None,None] slider=[None,None] items=None
+id=0x19 type=group 'Gamma Correction' default=None valid=[None,None] slider=[None,None] items=None
+id=0x74 type=group 'Scene Gamma: ' default=None valid=[None,None] slider=[None,None] items=None
+id=0x75 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x1a type=None 'Auto Detect Gamma' default=None valid=[None,None] slider=[None,None] items=''
+id=0x9a type=float 'Gamma Correction' default=100 valid=[None,300] slider=[None,100] items=None
+id=0x1c type=float '' default=None valid=[None,None] slider=[None,None] items='Gamma Info'
+id=0x9c type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Gamma'
+id=0x1d type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x1e type=group 'Aspect Ratio' default=None valid=[None,None] slider=[None,None] items=None
+id=0x1f type=float 'Aspect Ratio' default=1 valid=[None,1073741824] slider=[None,2] items=None
+id=0x20 type=None 'Enable Angle' default=None valid=[None,None] slider=[None,None] items=''
+id=0x21 type=None 'Aspect Angle' default=None valid=[None,None] slider=[None,None] items=None
+id=0x7b type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Aspect Ratio'
+id=0x22 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x23 type=group 'Chromatic Aberration' default=None valid=[None,None] slider=[None,None] items=None
+id=0x24 type=None 'Enable Pixel Aberration' default=None valid=[None,None] slider=[None,None] items=''
+id=0x25 type=None 'Aberration Channels' default=None valid=[None,None] slider=[None,None] items='Red & Green|Red & Blue|Green & Blue'
+id=0x26 type=float 'Pixel Offset' default=1 valid=[-1000,1000] slider=[-5,5] items=None
+id=0x24 type=None 'Enable Glow Aberration' default=None valid=[None,None] slider=[None,None] items=''
+id=0x61 type=float 'Multiply Red' default=80 valid=[None,200] slider=[50,150] items=None
+id=0x62 type=float 'Multiply Green' default=100 valid=[None,200] slider=[50,150] items=None
+id=0x63 type=float 'Multiply Blue' default=120 valid=[None,200] slider=[50,150] items=None
+id=0x64 type=float '' default=None valid=[None,None] slider=[None,None] items='Shuffle Channels'
+id=0x65 type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Aberration'
+id=0x27 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x28 type=group '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x2b type=None 'Tint Mode' default=None valid=[None,None] slider=[None,None] items='Off|(-|Monocolor|Duocolor'
+id=0x43 type=None 'Tint Blend Mode' default=None valid=[None,None] slider=[None,None] items='Multiply|Overlay|Soft Light'
+id=0x2a type=None 'Color' default=None valid=[None,None] slider=[None,None] items=None
+id=0x42 type=None 'Color Outer' default=None valid=[None,None] slider=[None,None] items=None
+id=0x45 type=float '' default=None valid=[None,None] slider=[None,None] items='Swap Colors'
+id=0x2c type=float 'Tint Strength' default=100 valid=[None,1128792064] slider=[None,200] items=None
+id=0x7c type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Tint'
+id=0x2d type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x51 type=group 'Tone Mapping' default=None valid=[None,None] slider=[None,None] items=None
+id=0x5d type=None 'Operation' default=None valid=[None,None] slider=[None,None] items='None|(-|ACES Filmic|Filmic|Hable Filmic|Reinhard|Reinhard 2|(-|Clamp Chroma'
+id=0x52 type=float '' default=100 valid=[None,1120403456] slider=[None,100] items=None
+id=0x7d type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Tone Mapping'
+id=0x53 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x55 type=group 'Lens Dirt Texture' default=None valid=[None,None] slider=[None,None] items=None
+id=0x56 type=None 'Texture' default=None valid=[None,None] slider=[None,None] items=None
+id=0x58 type=float 'Opacity' default=100 valid=[None,1120403456] slider=[None,100] items=None
+id=0x94 type=float 'Inherit Glow Color' default=None valid=[None,1120403456] slider=[None,100] items=None
+id=0x59 type=float 'Matte Exposure' default=None valid=[-10,10] slider=[-2,2] items=None
+id=0x5a type=float 'Matte Gamma' default=1 valid=[0.1,5] slider=[0.1,2] items=None
+id=0x78 type=None 'Repeat Edges' default=None valid=[None,None] slider=[None,None] items=''
+id=0x7e type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Lens Dirt'
+id=0x5c type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x2e type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x2f type=group 'Quality' default=None valid=[None,None] slider=[None,None] items=None
+id=0x30 type=None 'Quality Preset' default=None valid=[None,None] slider=[None,None] items='Draft|Low|Medium|Standard|High|Extreme|(-|Custom'
+id=0x30 type=None 'Quality Preset Iris' default=None valid=[None,None] slider=[None,None] items='Draft|Low|Medium|Standard|High|Extreme'
+id=0x5e type=None 'Half Float' default=None valid=[None,None] slider=[None,None] items='(Reduces Mem Usage)'
+id=0x31 type=float 'Resolution' default=75 valid=[25,100] slider=[25,100] items=None
+id=0x32 type=float 'Steps Multiplier' default=0.5 valid=[0.01,3] slider=[0.01,1] items=None
+id=0x33 type=float 'Glow Iterations' default=8 valid=[6,10] slider=[6,10] items=None
+id=0x40 type=None 'Buffer Expansion Mode' default=None valid=[None,None] slider=[None,None] items='Auto|Comp Size'
+id=0x41 type=None 'Aux Buffer Expansion' default=None valid=[None,None] slider=[None,None] items=None
+id=0x7f type=float '' default=None valid=[None,None] slider=[None,None] items='Reset Quality'
+id=0x34 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x35 type=None '' default=None valid=[None,None] slider=[None,None] items='Final Result|Glow Input|(-|View Iris|(-|Lens Dirt Input|Lens Dirt Matte|Lens Dirt Matted'
+id=0x87 type=None '' default=None valid=[None,None] slider=[None,None] items='Final Result|Glow Input|(-|Lens Dirt Input|Lens Dirt Matte|Lens Dirt Matted'
+id=0x36 type=float 'Source Opacity' default=100 valid=[None,1120403456] slider=[None,100] items=None
+id=0x37 type=None 'Unmult' default=None valid=[None,None] slider=[None,None] items='(Required for Alpha)'
+id=0x38 type=group 'Debug' default=None valid=[None,None] slider=[None,None] items=None
+id=0x9b type=None 'Pre Proc Solid Fill' default=None valid=[None,None] slider=[None,None] items=''
+id=0x83 type=float 'Iris Sample Quality' default=50 valid=[None,100] slider=[20,80] items=None
+id=0x88 type=None 'Debug View' default=None valid=[None,None] slider=[None,None] items='Blur W|Blur H|None'
+id=0x84 type=None 'Draw Dimensions Comp UI' default=None valid=[None,None] slider=[None,None] items=''
+id=0x39 type=None 'Show Buffers' default=None valid=[None,None] slider=[None,None] items=''
+id=0x72 type=None 'cout PreRender Rects' default=None valid=[None,None] slider=[None,None] items=''
+id=0x73 type=None 'cout Buffer Dims' default=None valid=[None,None] slider=[None,None] items=''
+id=0x89 type=None 'Shaders Per Frame' default=None valid=[None,None] slider=[None,None] items=''
+id=0x3a type=None 'Edge Behaviour (Deprecated)' default=None valid=[None,None] slider=[None,None] items='Repeat|Mirror Repeat|Clamp to Edge|None'
+id=0x66 type=None 'Renderer (Deprecated)' default=None valid=[None,None] slider=[None,None] items='OpenGL|Metal'
+id=0x6d type=None 'Metal GPU Capture' default=None valid=[None,None] slider=[None,None] items=''
+id=0x8f type=None 'Simplified Exposure' default=None valid=[None,None] slider=[None,None] items=''
+id=0x92 type=None 'Iris Cull Small Values' default=None valid=[None,None] slider=[None,None] items=''
+id=0x3b type=float '' default=None valid=[-5000,1167867904] slider=[None,100] items=None
+id=0x3c type=float '' default=None valid=[-5000,1167867904] slider=[None,100] items=None
+id=0x3d type=float 'Right' default=None valid=[-5000,1167867904] slider=[None,100] items=None
+id=0x3e type=float 'Bottom' default=None valid=[-5000,1167867904] slider=[None,100] items=None
+id=0x3f type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x85 type=group 'Deprecated' default=None valid=[None,None] slider=[None,None] items=None
+id=0x1b type=None 'Gamma Correction' default=None valid=[None,None] slider=[None,None] items=''
+id=0x4e type=group 'Astigmatism' default=None valid=[None,None] slider=[None,None] items=None
+id=0x46 type=None 'Enable Astigmatism' default=None valid=[None,None] slider=[None,None] items=''
+id=0x4f type=None 'Force Square Ratio' default=None valid=[None,None] slider=[None,None] items=''
+id=0x47 type=None 'View Focal Point' default=None valid=[None,None] slider=[None,None] items=''
+id=0x48 type=float 'Focal Length' default=50 valid=[None,1120403456] slider=[None,100] items=None
+id=0x49 type=float 'Focal Falloff' default=50 valid=[None,1128792064] slider=[None,100] items=None
+id=0x50 type=text '' default=None valid=[None,None] slider=[None,None] items=None
+id=0x5b type=None 'Lens View' default=None valid=[None,None] slider=[None,None] items='Deprecated'
+id=0x6c type=None '' default=None valid=[None,None] slider=[None,None] items='View Iris'
+id=0x29 type=None 'Enable' default=None valid=[None,None] slider=[None,None] items=''
+id=0x57 type=None 'Blend Mode' default=None valid=[None,None] slider=[None,None] items='Screen|Add'
+id=0x54 type=None 'Enable' default=None valid=[None,None] slider=[None,None] items=''
+id=0x44 type=float 'Inner/Outer Bias' default=50 valid=[None,1120403456] slider=[None,100] items=None
+id=0x6b type=None 'Render Quality (Quantization)' default=None valid=[None,None] slider=[None,None] items='1x (8px) |2x (16px) |3x (32px) |4x (64px) |5x (128px) |6x (256px)|7x (512px)|8x (1024px)'
+id=0x86 type=text '' default=None valid=[None,None] slider=[None,None] items=None

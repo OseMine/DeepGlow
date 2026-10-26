@@ -1,0 +1,266 @@
+0000eb97  cmp dword ptr [rbx + 0x6f78], 6
+0000eb9e  jne 0x18000ec5d
+0000eba4  mov r9, qword ptr [rbx + 0x6fb0]
+0000ebab  mov rcx, qword ptr [rbx + 0x6fb8]
+0000ebb2  movsxd r8, eax
+0000ebb5  sub rcx, r9
+0000ebb8  mov rax, r15
+0000ebbb  dec r8
+0000ebbe  imul rcx
+0000ebc1  sar rdx, 4
+0000ebc5  mov rax, rdx
+0000ebc8  shr rax, 0x3f
+0000ebcc  add rdx, rax
+0000ebcf  cmp rdx, r8
+0000ebd2  jbe 0x18000efe4
+0000ebd8  imul rax, r8, 0x38
+0000ebdc  mov dword ptr [rax + r9 + 0x30], 0x3f800000
+0000ebe5  mov rax, r15
+0000ebe8  mov r9, qword ptr [rbx + 0x6fb0]
+0000ebef  mov rcx, qword ptr [rbx + 0x6fb8]
+0000ebf6  movsxd r8, dword ptr [rbx + 0x6fac]
+0000ebfd  sub rcx, r9
+0000ec00  imul rcx
+0000ec03  dec r8
+0000ec06  sar rdx, 4
+0000ec0a  mov rax, rdx
+0000ec0d  shr rax, 0x3f
+0000ec11  add rdx, rax
+0000ec14  cmp rdx, r8
+0000ec17  jbe 0x18000efe4
+0000ec1d  imul rax, r8, 0x38
+0000ec21  movss xmm0, dword ptr [rax + r9 + 0x1c]
+0000ec28  cvtps2pd xmm0, xmm0
+0000ec2b  comisd xmm6, xmm0
+0000ec2f  jbe 0x18000ec36
+0000ec31  movaps xmm0, xmm6
+0000ec34  jmp 0x18000ec3f  -> 0000ec3f
+0000ec36  cmp rdx, r8
+0000ec39  jbe 0x18000efe4
+0000ec3f  cmp rdx, r8
+0000ec42  jbe 0x18000efe4
+0000ec48  imul rax, r8, 0x38
+0000ec4c  cvtsd2ss xmm0, xmm0
+0000ec50  movss dword ptr [rax + r9 + 0x1c], xmm0
+0000ec57  mov eax, dword ptr [rbx + 0x6fac]
+0000ec5d  test eax, eax
+0000ec5f  jle 0x18000ef77
+0000ec65  mov rsi, r14
+0000ec68  mov rdi, r14
+0000ec6b  nop dword ptr [rax + rax]
+0000ec70  mov r8, qword ptr [rbx + 0x6fb0]
+0000ec77  mov rax, r15
+0000ec7a  mov rcx, qword ptr [rbx + 0x6fb8]
+0000ec81  sub rcx, r8
+0000ec84  imul rcx
+0000ec87  sar rdx, 4
+0000ec8b  mov rax, rdx
+0000ec8e  shr rax, 0x3f
+0000ec92  add rdx, rax
+0000ec95  cmp rdx, rsi
+0000ec98  jbe 0x18000efe4
+0000ec9e  movss xmm0, dword ptr [rdi + r8 + 0x1c]
+0000eca5  mov rax, r15
+0000eca8  mulss xmm0, dword ptr [rdi + r8]
+0000ecae  movss dword ptr [rdi + r8 + 0x1c], xmm0
+0000ecb5  mov rcx, qword ptr [rbx + 0x6fb8]
+0000ecbc  sub rcx, r8
+0000ecbf  imul rcx
+0000ecc2  sar rdx, 4
+0000ecc6  mov rax, rdx
+0000ecc9  shr rax, 0x3f
+0000eccd  add rdx, rax
+0000ecd0  cmp rdx, rsi
+0000ecd3  jbe 0x18000efe4
+0000ecd9  mov rax, qword ptr [rbx + 0x6fb0]
+0000ece0  movss xmm0, dword ptr [rdi + rax + 0x1c]
+0000ece6  cvtps2pd xmm0, xmm0
+0000ece9  mulsd xmm0, qword ptr [rbx + 0x7080]
+0000ecf1  movsd qword ptr [rdi + rax + 0x20], xmm0
+0000ecf7  mov rax, r15
+0000ecfa  mov r8, qword ptr [rbx + 0x6fb0]
+0000ed01  mov rcx, qword ptr [rbx + 0x6fb8]
+0000ed08  sub rcx, r8
+0000ed0b  imul rcx
+0000ed0e  sar rdx, 4
+0000ed12  mov rax, rdx
+0000ed15  shr rax, 0x3f
+0000ed19  add rdx, rax
+0000ed1c  cmp rdx, rsi
+0000ed1f  jbe 0x18000efe4
+0000ed25  movss xmm0, dword ptr [rdi + r8 + 0x1c]
+0000ed2c  mov rax, r15
+0000ed2f  cvtps2pd xmm0, xmm0
+0000ed32  mulsd xmm0, qword ptr [rbx + 0x7088]
+0000ed3a  movsd qword ptr [rdi + r8 + 0x28], xmm0
+0000ed41  mov rbp, qword ptr [rbx + 0x6fb0]
+0000ed48  mov rcx, qword ptr [rbx + 0x6fb8]
+0000ed4f  sub rcx, rbp
+0000ed52  imul rcx
+0000ed55  sar rdx, 4
+0000ed59  mov rax, rdx
+0000ed5c  shr rax, 0x3f
+0000ed60  add rdx, rax
+0000ed63  cmp rdx, rsi
+0000ed66  jbe 0x18000efe4
+0000ed6c  movss xmm0, dword ptr [rbx + 0x6fa8]
+0000ed74  cvtps2pd xmm0, xmm0
+0000ed77  mulsd xmm0, qword ptr [rdi + rbp + 0x20]
+0000ed7d  call 0x18036e2fc  -> 0036e2fc
+0000ed82  comisd xmm0, xmm6
+0000ed86  ja 0x18000ed8b
+0000ed88  movaps xmm0, xmm6
+0000ed8b  cvttsd2si eax, xmm0
+0000ed8f  mov dword ptr [rdi + rbp + 0xc], eax
+0000ed93  mov rax, r15
+0000ed96  mov rbp, qword ptr [rbx + 0x6fb0]
+0000ed9d  mov rcx, qword ptr [rbx + 0x6fb8]
+0000eda4  sub rcx, rbp
+0000eda7  imul rcx
+0000edaa  sar rdx, 4
+0000edae  mov rax, rdx
+0000edb1  shr rax, 0x3f
+0000edb5  add rdx, rax
+0000edb8  cmp rdx, rsi
+0000edbb  jbe 0x18000efe4
+0000edc1  movss xmm0, dword ptr [rbx + 0x6fa8]
+0000edc9  cvtps2pd xmm0, xmm0
+0000edcc  mulsd xmm0, qword ptr [rdi + rbp + 0x28]
+0000edd2  call 0x18036e2fc  -> 0036e2fc
+0000edd7  comisd xmm0, xmm6
+0000eddb  ja 0x18000ede0
+0000eddd  movaps xmm0, xmm6
+0000ede0  cvttsd2si eax, xmm0
+0000ede4  mov dword ptr [rdi + rbp + 0x10], eax
+0000ede8  mov rax, r15
+0000edeb  mov rbp, qword ptr [rbx + 0x6fb0]
+0000edf2  mov rcx, qword ptr [rbx + 0x6fb8]
+0000edf9  sub rcx, rbp
+0000edfc  imul rcx
+0000edff  sar rdx, 4
+0000ee03  mov rax, rdx
+0000ee06  shr rax, 0x3f
+0000ee0a  add rdx, rax
+0000ee0d  cmp rdx, rsi
+0000ee10  jbe 0x18000efe4
+0000ee16  mov rax, qword ptr [rbx + 0x6e28]
+0000ee1d  movss xmm1, dword ptr [rdi + rbp]
+0000ee22  cvtps2pd xmm1, xmm1
+0000ee25  movd xmm0, dword ptr [rax + 0x24]
+0000ee2a  cvtdq2pd xmm0, xmm0
+0000ee2e  mulsd xmm0, xmm1
+0000ee32  call 0x18036e2fc  -> 0036e2fc
+0000ee37  cvttsd2si eax, xmm0
+0000ee3b  mov dword ptr [rdi + rbp + 4], eax
+0000ee3f  mov rax, r15
+0000ee42  mov rbp, qword ptr [rbx + 0x6fb0]
+0000ee49  mov rcx, qword ptr [rbx + 0x6fb8]
+0000ee50  sub rcx, rbp
+0000ee53  imul rcx
+0000ee56  sar rdx, 4
+0000ee5a  mov rax, rdx
+0000ee5d  shr rax, 0x3f
+0000ee61  add rdx, rax
+0000ee64  cmp rdx, rsi
+0000ee67  jbe 0x18000efe4
+0000ee6d  mov rax, qword ptr [rbx + 0x6e28]
+0000ee74  movss xmm1, dword ptr [rdi + rbp]
+0000ee79  cvtps2pd xmm1, xmm1
+0000ee7c  movd xmm0, dword ptr [rax + 0x28]
+0000ee81  cvtdq2pd xmm0, xmm0
+0000ee85  mulsd xmm0, xmm1
+0000ee89  call 0x18036e2fc  -> 0036e2fc
+0000ee8e  cvttsd2si eax, xmm0
+0000ee92  mov dword ptr [rdi + rbp + 8], eax
+0000ee96  mov rax, r15
+0000ee99  mov r8, qword ptr [rbx + 0x6fb0]
+0000eea0  mov rcx, qword ptr [rbx + 0x6fb8]
+0000eea7  sub rcx, r8
+0000eeaa  imul rcx
+0000eead  sar rdx, 4
+0000eeb1  mov rax, rdx
+0000eeb4  shr rax, 0x3f
+0000eeb8  add rdx, rax
+0000eebb  cmp rdx, rsi
+0000eebe  jbe 0x18000efe4
+0000eec4  movsd xmm3, qword ptr [rdi + r8 + 0x20]
+0000eecb  movaps xmm2, xmm6
+0000eece  movd xmm0, dword ptr [rdi + r8 + 0xc]
+0000eed5  mov rax, r15
+0000eed8  movd xmm1, dword ptr [rdi + r8 + 4]
+0000eedf  cvtdq2pd xmm0, xmm0
+0000eee3  cvtdq2pd xmm1, xmm1
+0000eee7  divsd xmm3, xmm0
+0000eeeb  divsd xmm2, xmm1
+0000eeef  mulsd xmm3, xmm2
+0000eef3  cvtpd2ps xmm0, xmm3
+0000eef7  movss dword ptr [rdi + r8 + 0x14], xmm0
+0000eefe  mov r8, qword ptr [rbx + 0x6fb0]
+0000ef05  mov rcx, qword ptr [rbx + 0x6fb8]
+0000ef0c  sub rcx, r8
+0000ef0f  imul rcx
+0000ef12  sar rdx, 4
+0000ef16  mov rax, rdx
+0000ef19  shr rax, 0x3f
+0000ef1d  add rdx, rax
+0000ef20  cmp rdx, rsi
+0000ef23  jbe 0x18000efe4
+0000ef29  movsd xmm3, qword ptr [rdi + r8 + 0x28]
+0000ef30  movaps xmm2, xmm6
+0000ef33  movd xmm0, dword ptr [rdi + r8 + 0x10]
+0000ef3a  inc r14d
+0000ef3d  movd xmm1, dword ptr [rdi + r8 + 8]
+0000ef44  inc rsi
+0000ef47  cvtdq2pd xmm0, xmm0
+0000ef4b  cvtdq2pd xmm1, xmm1
+0000ef4f  divsd xmm3, xmm0
+0000ef53  divsd xmm2, xmm1
+0000ef57  mulsd xmm3, xmm2
+0000ef5b  cvtpd2ps xmm0, xmm3
+0000ef5f  movss dword ptr [rdi + r8 + 0x18], xmm0
+0000ef66  add rdi, 0x38
+0000ef6a  cmp r14d, dword ptr [rbx + 0x6fac]
+0000ef71  jl 0x18000ec70
+0000ef77  cmp dword ptr [rbx + 0x6f78], 6
+0000ef7e  jne 0x18000ef8a
+0000ef80  mov dword ptr [rbx + 0x6f78], 8
+0000ef8a  movaps xmm10, xmmword ptr [rsp + 0x60]
+0000ef90  xor eax, eax
+0000ef92  movaps xmm8, xmmword ptr [rsp + 0x80]
+0000ef9b  mov r12, qword ptr [rsp + 0xb0]
+0000efa3  mov rdi, qword ptr [rsp + 0xf0]
+0000efab  mov rsi, qword ptr [rsp + 0xe8]
+0000efb3  mov rcx, qword ptr [rsp + 0x58]
+0000efb8  xor rcx, rsp
+0000efbb  call 0x18036c400  -> 0036c400
+0000efc0  movaps xmm6, xmmword ptr [rsp + 0xa0]
+0000efc8  movaps xmm7, xmmword ptr [rsp + 0x90]
+0000efd0  movaps xmm9, xmmword ptr [rsp + 0x70]
+0000efd6  add rsp, 0xb8
+0000efdd  pop r15
+0000efdf  pop r14
+0000efe1  pop rbp
+0000efe2  pop rbx
+0000efe3  ret
+0000efe4  call 0x18001d080  -> 0001d080
+0000efe9  int3
+0000efea  nop
+0000efec  jmp 0x16969eff2  -> 1696adfe4
+0000eff2  add byte ptr [rax], al
+0000eff4  pushfq
+0000eff5  jmp 0x169d2effa  -> 169d3dff4
+0000effa  add byte ptr [rax], al
+0000effc  or dl, ch
+0000effe  add byte ptr [rax], al
+0000f000  .byte 0x3e
+0000f001  .byte 0xea
+0000f002  add byte ptr [rax], al
+0000f004  je 0x18000eff0
+0000f006  add byte ptr [rax], al
+0000f008  stosb byte ptr [rdi], al
+0000f009  .byte 0xea
+0000f00a  add byte ptr [rax], al
+0000f00c  fldl2e
+0000f00e  add byte ptr [rax], al
+0000f010  or bl, ch
+0000f012  add byte ptr [rax], al

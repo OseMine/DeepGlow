@@ -1,0 +1,1283 @@
+003d14e9	a	gfffffffI+
+003d2fa0	w	:AM:am:PM:pm
+003d3470	a	PF Handle Suite
+003d3480	a	PF Iterate8 Suite
+003d3498	a	PF iterateFloat Suite
+003d34c0	a	, Color Buffer ID: 
+003d34d8	a	, Edge Behavior: 
+003d34f0	a	, Image Type: 
+003d3500	a	, Internal Format: 
+003d3518	a	, Dimensions: 
+003d3528	a	, FBO ID: 
+003d3538	a	FBO Details
+003d3550	a	CreateTextureRenderBuffer2 error: m_colorBuffer.ID already initialised
+003d3598	a	c:\users\debug\dropbox\dev\deepglow2\deepglow2\classes\fbo.cpp
+003d35d8	a	glGenTextures(1, &m_colorBuffer.ID)
+003d3600	a	glBindTexture(GL_TEXTURE_2D, m_colorBuffer.ID)
+003d3630	a	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, m_edgeBehaviour)
+003d3680	a	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, m_edgeBehaviour)
+003d36d0	a	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
+003d3720	a	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
+003d3770	a	glTexImage2D(GL_TEXTURE_2D, 0, m_internalFormat, m_widthLu, m_heightLu, 0, GL_RGB, m_imageType, NULL)
+003d37d8	a	glBindTexture(GL_TEXTURE_2D, 0)
+003d37f8	a	GetFBO() !m_FBO_ID.ID
+003d3810	a	GetTAO() !m_colorBuffer.ID
+003d3830	a	CreateFBO2 error: m_FBO_ID already initialised
+003d3860	a	glGenFramebuffers(1, &m_FBO_ID)
+003d3880	a	glBindFramebuffer(GL_FRAMEBUFFER, m_FBO_ID)
+003d38b0	a	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_colorBuffer.ID, 0)
+003d3918	a	CreateFBO2
+003d3930	a	GL_FRAMEBUFFER_UNDEFINED: The specified framebuffer is the default framebuffer, but the default framebuffer doesn't exist.
+003d39b0	a	GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT: One or more attachment points are framebuffer incomplete.
+003d3a10	a	GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT: The framebuffer does not have at least one image attached to it.
+003d3a80	a	GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER: The value of GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE is GL_NONE for a color attachment point referenced by GL_DRAW_BUFFERi.
+003d3b30	a	GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER: GL_READ_BUFFER is not GL_NONE and the value of GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE is GL_NONE for the color attachment point referenced by GL_READ_BUFFER.
+003d3c00	a	GL_FRAMEBUFFER_UNSUPPORTED: The combination of internal formats of the attached images violates an implementation-dependent set of restrictions.
+003d3ca0	a	GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE: The value of GL_RENDERBUFFER_SAMPLES is not the same for all attached renderbuffers; or the value of GL_TEXTURE_SAMPLES is not the same for all attached textures; or the attached images are a mix of renderbuffers and textures, and the value of GL_RENDERBUFFER_SAMPLES does not match the value of GL_TEXTURE_SAMPLES.
+003d3e10	a	GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS: A framebuffer attachment is layered, and a populated attachment is not layered, or all populated color attachments are not from textures of the same target.
+003d3ed8	a	Unknown framebuffer status error.
+003d3f00	a	glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE)
+003d3f30	a	glClearColor(0., 0., 0., 0.)
+003d3f50	a	glClear(GL_COLOR_BUFFER_BIT)
+003d3f70	a	glBindFramebuffer(GL_FRAMEBUFFER, NULL)
+003d3f98	a	CreateTextureFBO2()
+003d3fb0	a	glDeleteVertexArrays(1, &vao)
+003d3fd0	a	SetProgramAttributes()
+003d3fe8	a	glGenVertexArrays(1, &vao)
+003d4008	a	glViewport(viewport.x, viewport.y, viewport.z, viewport.w)
+003d4048	a	glUseProgram(glPod.podMap[SHADER])
+003d4070	a	glBindVertexArray(vao)
+003d4090	a	glDrawArraysInstanced(glPod.podMap[PRIMITIVE], glPod.podMap[V_OFFSET], glPod.podMap[V_SIZE], glPod.podMap[INSTANCES])
+003d4108	a	RenderPOD2 error: !vao
+003d4120	a	glGenBuffers(1, &buffer)
+003d4140	a	glBindBuffer(GL_ARRAY_BUFFER, buffer)
+003d4168	a	glBufferData(GL_ARRAY_BUFFER, bytes, data, GL_STATIC_DRAW)
+003d41a8	a	error: pod already has buffers
+003d41c8	a	error: pod already has buffers
+003d41e8	a	vertex
+003d41f8	a	texCoordIn
+003d4208	a	quadPod.ownedVBOs invalid ID
+003d4228	a	quadPod.ownedVBOs.size() != 2
+003d4248	a	UploadToTexture() called without valid m_colorBuffer.ID
+003d4280	a	UploadToTexture() called without valid aeBuffer
+003d42b0	a	UploadToTexture() called without valid bpc: 
+003d42e0	a	UploadToTexture() called without m_in_data
+003d4310	a	glBindBuffer(GL_PIXEL_UNPACK_BUFFER, 0)
+003d4338	a	glPixelStorei(GL_UNPACK_ALIGNMENT, 1)
+003d4360	a	glPixelStorei(GL_UNPACK_ROW_LENGTH, aeBuffer->width)
+003d43a0	a	glTexImage2D(GL_TEXTURE_2D, 0, m_internalFormat, aeBuffer->width, aeBuffer->height, 0, GL_RGB, m_imageType, nullptr)
+003d4420	a	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, aeBuffer->width, aeBuffer->height, GL_RGB, GL_HALF_FLOAT, bufferP)
+003d4490	a	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, aeBuffer->width, aeBuffer->height, GL_RGB, GL_FLOAT, bufferP)
+003d4500	a	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, aeBuffer->width, aeBuffer->height, GL_RGB, GL_UNSIGNED_BYTE, bufferP)
+003d4570	a	glPixelStorei(GL_UNPACK_ALIGNMENT, 4)
+003d4598	a	glPixelStorei(GL_UNPACK_ROW_LENGTH, 0)
+003d45c0	a	iterate error
+003d45d0	a	!bufferP
+003d45e0	a	!bufferH;
+003d45f0	a	, description: 
+003d4600	a	UploadToTexture() failed with error code: 
+003d4630	a	. BPC: 
+003d4640	a	. Dimensions: 
+003d4650	a	FBOtoEffectWorld() called without valid bpc: 
+003d4680	a	FBOtoEffectWorld() called without m_in_data
+003d46b0	a	glBindBuffer(GL_PIXEL_PACK_BUFFER, 0)
+003d46d8	a	glReadBuffer(GL_COLOR_ATTACHMENT0)
+003d4700	a	glPixelStorei(GL_PACK_ALIGNMENT, 1)
+003d4728	a	glPixelStorei(GL_PACK_ROW_LENGTH, 0)
+003d4750	a	glReadPixels(0, 0, aeBuffer->width, aeBuffer->height, GL_RGB, GL_HALF_FLOAT, bufferP)
+003d47b0	a	glReadPixels(0, 0, aeBuffer->width, aeBuffer->height, GL_RGB, GL_FLOAT, bufferP)
+003d4810	a	glReadPixels(0, 0, aeBuffer->width, aeBuffer->height, GL_RGB, GL_UNSIGNED_BYTE, bufferP)
+003d4870	a	glPixelStorei(GL_PACK_ALIGNMENT, 4)
+003d4898	a	glBindFramebuffer(GL_FRAMEBUFFER, 0)
+003d48c0	a	FBOtoEffectWorld() failed with error code: 
+003d48f0	a	invalid vector<T> subscript
+003d4910	a	invalid array<T, N> subscript
+003d4930	a	invalid string position
+003d4948	a	vector<T> too long
+003d4960	a	list<T> too long
+003d4978	a	string too long
+003d4b18	a	GL_NO_ERROR
+003d4b28	a	GL_INVALID_ENUM
+003d4b38	a	GL_INVALID_VALUE
+003d4b50	a	GL_INVALID_OPERATION
+003d4b68	a	GL_OUT_OF_MEMORY
+003d4b80	a	GL_INVALID_FRAMEBUFFER_OPERATION
+003d4ba8	a	UNKNOWN_GL_ERROR
+003d4bc0	a	GL_RGB16F
+003d4bd0	a	GL_RGB32F
+003d4be0	a	GL_RGBA16F
+003d4bf0	a	GL_RGBA32F
+003d4bfc	a	GL_RGB
+003d4c08	a	GL_RGBA
+003d4c18	a	Unknown format (
+003d4c30	a	GL_FLOAT
+003d4c40	a	GL_UNSIGNED_SHORT
+003d4c58	a	GL_UNSIGNED_BYTE
+003d4c70	a	GL_HALF_FLOAT
+003d4c80	a	Unknown type (
+003d4c90	a	GL_CLAMP_TO_EDGE
+003d4ca8	a	GL_REPEAT
+003d4cb8	a	GL_MIRRORED_REPEAT
+003d4cd0	a	GL_CLAMP_TO_BORDER
+003d4ce8	a	Unknown edge behavior (
+003d4d18	a	 cleared pre-existing OpenGL error: 
+003d4d50	a	OpenGL error 
+003d4f90	a	Unknown exception
+003d4fa8	a	bad cast
+003d4fb8	a	COMPUTE_PRE_PROC_P
+003d4fd0	a	COMPUTE_BLEND_P
+003d4fe0	a	COMPUTE_POST_PROC_P
+003d4ff8	a	COMPUTE_UNKNOWN_P
+003d5010	a	PRE_PROC_XFORM_P
+003d5028	a	PRE_PROC_IDENTITY_P
+003d5040	a	DOWNSAMPLE_P
+003d5050	a	UPSAMPLE_P
+003d5060	a	BLUR_UNIFIED_P
+003d5070	a	POST_PROC_P
+003d5080	a	IDENTITY
+003d5090	a	UNKNOWN_P
+003d50a8	a	Failed loading from disk: 
+003d50c8	a	Failed loading shader source, source too short.
+003d50f8	a	Deep Glow 2: 
+003d5118	a	Unable to load shader: 
+003d5860	a	AEGP Layer Suite
+003d5878	a	AEGP PF Interface Suite
+003d5890	a	PF World Transform Suite
+003d58b0	a	PF World Suite
+003d58c0	a	AEGP Iterate Suite
+003d58e1	a	// begin shader
+003d58f1	a	#version 330 core
+003d5904	a	in vec2 out_uvs;
+003d5915	a	out vec3 FragColor;
+003d592a	a	uniform sampler2D videoTexture; // Texture from the previous iteration (i-1)
+003d5977	a	uniform vec2 previousSize;         // Size of the previous texture
+003d59ba	a	uniform vec2 currentSize;          // Size of the current framebuffer
+003d5a00	a	uniform int cull_small_valuesB;
+003d5a21	a	vec3 cull_small_values(vec3 in_pix, float threshold)
+003d5a58	a	    vec3 ret;
+003d5a66	a	    ret.r = (abs(in_pix.r) < threshold) ? 0.0 : in_pix.r;
+003d5aa0	a	    ret.g = (abs(in_pix.g) < threshold) ? 0.0 : in_pix.g;
+003d5ada	a	    ret.b = (abs(in_pix.b) < threshold) ? 0.0 : in_pix.b;
+003d5b14	a	    return ret;
+003d5b27	a	void main()
+003d5b35	a	    // Calculate the coordinates for sampling the previous texture
+003d5b78	a	    vec2 previousCoords = (out_uvs * currentSize - (currentSize - previousSize) * 0.5) / previousSize;
+003d5be0	a	    // Sample from the previous texture
+003d5c08	a	    FragColor = texture(videoTexture, previousCoords).rgb;
+003d5c48	a	    if(cull_small_valuesB == 1)
+003d5c68	a	    {
+003d5c6e	a	        float small_cull_value = 0.00001;
+003d5c98	a	        FragColor = cull_small_values(FragColor, small_cull_value);
+003d5cdc	a	    }
+003d5ce4	a	// end shader
+003d5d01	a	// begin shader
+003d5d11	a	// blend a smaller texture into a larger buffer with an integer only offset (like a blit but with blending)
+003d5d7e	a	#version 330
+003d5d8c	a	uniform sampler2D videoTexture;
+003d5dac	a	uniform ivec2 inputTextureSize;  // Size of the input texture
+003d5dea	a	uniform ivec2 outputBufferSize;  // Size of the output buffer
+003d5e29	a	in vec2 out_uvs;
+003d5e3a	a	out vec4 FragColor;
+003d5e4f	a	void main()
+003d5e5d	a	    // Calculate the offset to center the texture
+003d5e8f	a	    ivec2 pixelOffset = (outputBufferSize - inputTextureSize) / 2;
+003d5ed3	a	    // Convert from normalized coordinates to pixel coordinates
+003d5f13	a	    ivec2 pixelCoords = ivec2(out_uvs * vec2(outputBufferSize));
+003d5f59	a	    // Apply the offset
+003d5f71	a	    ivec2 textureCoords = pixelCoords - pixelOffset;
+003d5fab	a	    // Check if we're within the bounds of the input texture
+003d5fe8	a	    if (textureCoords.x >= 0 && textureCoords.x < inputTextureSize.x &&
+003d6030	a	        textureCoords.y >= 0 && textureCoords.y < inputTextureSize.y)
+003d6076	a	    {
+003d607c	a	        // Convert back to normalized coordinates for texture sampling
+003d60c3	a	        vec2 normalizedCoords = vec2(textureCoords) / vec2(inputTextureSize);
+003d6111	a	        
+003d611a	a	        // Sample the texture
+003d6138	a	        FragColor = texture(videoTexture, normalizedCoords);
+003d6175	a	    }
+003d617b	a	    else
+003d6184	a	    {
+003d618a	a	        // Outside the texture bounds, set to a background color
+003d61cb	a	        FragColor = vec4(0.0, 0.0, 0.0, 1.0); // Black color
+003d6208	a	    }
+003d6210	a	// end shader
+003d6221	a	// begin shader
+003d6231	a	#version 330
+003d623e	a	uniform sampler2D videoTexture;
+003d625e	a	out vec3 FragColour;
+003d6273	a	in vec2 out_uvs;
+003d6285	a	uniform float STEPS;
+003d629a	a	uniform float strideX;
+003d62b1	a	uniform float strideY;
+003d62c8	a	uniform float fadeMultiplier; // fade in certain iterations (blurW only which then propogates to blurH)
+003d6330	a	uniform bool isAngleB;
+003d6347	a	uniform bool isBlurWidthB;
+003d6363	a	uniform bool is_glow_aberrationB;
+003d6385	a	uniform float redMultF;
+003d639d	a	uniform float greenMultF;
+003d63b7	a	uniform float blueMultF;
+003d63d1	a	uniform bool bypassB; // debug to view individual axes on their own
+003d6416	a	float getWeight(float x){ return exp(-0.5*(x*x)/0.06); } // 0.09 is sgima * sigma, or 0.3 * 0.3
+003d6477	a	float sampleRed(float multiplier, float STEPS);
+003d64a7	a	float sampleGreen(float multiplier, float STEPS);
+003d64d9	a	float sampleBlue(float multiplier, float STEPS);
+003d650a	a	                             
+003d6528	a	void main(void)
+003d653a	a	    if(bypassB)
+003d654a	a	    {
+003d6550	a	        FragColour = texture(videoTexture, out_uvs).rgb;
+003d6589	a	        return;
+003d6599	a	    }
+003d65a0	a	    if(is_glow_aberrationB)
+003d65bc	a	    {
+003d65c2	a	        FragColour.r = sampleRed(greenMultF, STEPS); // green
+003d6600	a	        FragColour.g = sampleGreen(blueMultF, STEPS); // blue
+003d663e	a	        FragColour.b = sampleBlue(redMultF, STEPS); // red
+003d6679	a	    }
+003d667f	a	    else
+003d6688	a	    {
+003d668e	a	        vec3 total = vec3(0.0);
+003d66ae	a	        float totalWeight = 0.0;
+003d66cf	a	        
+003d66d8	a	        for(float i = -STEPS; i <= STEPS; i++)
+003d6707	a	        {
+003d6711	a	            vec2 texCoord = out_uvs + vec2(i * strideX, i * strideY);
+003d6757	a	            float weight = getWeight(i / STEPS);
+003d6788	a	            total += weight * texture(videoTexture, texCoord).rgb;
+003d67cb	a	            totalWeight += weight;
+003d67ee	a	        }
+003d67f8	a	        
+003d6801	a	        FragColour = total / vec3(totalWeight);
+003d6831	a	    }
+003d683c	a	    if(isBlurWidthB)
+003d6851	a	    {
+003d6857	a	        FragColour *= vec3(fadeMultiplier);
+003d6883	a	    }
+003d688e	a	    //FragColour = vec3(0.5); // debug
+003d68b8	a	float sampleRed(float multiplier, float STEPS)
+003d68e9	a	    float total = 0.0;
+003d6900	a	    float totalWeight = 0.0;
+003d691d	a	    float redStrideX = strideX;
+003d693d	a	    float redStrideY = strideY;
+003d695d	a	    float stepsF = max(STEPS * multiplier, 1.0);
+003d6993	a	    if(isAngleB)
+003d69a4	a	    {
+003d69aa	a	        // don't do anything to stride, they are correct
+003d69e3	a	    }
+003d69e9	a	    else if(isBlurWidthB)
+003d6a03	a	    {
+003d6a09	a	        redStrideY = 0.0;
+003d6a23	a	    }
+003d6a29	a	    else
+003d6a32	a	    {
+003d6a38	a	        redStrideX = 0.0;
+003d6a52	a	    }
+003d6a59	a	    for(float i = -stepsF; i <= stepsF; i++)
+003d6a86	a	    {
+003d6a8c	a	        vec2 texCoord = out_uvs + vec2(i * redStrideX, i * redStrideY);
+003d6ad4	a	        float weight = getWeight(i / stepsF);
+003d6b02	a	        total += weight * texture(videoTexture, texCoord).r;
+003d6b3f	a	        totalWeight += weight;
+003d6b5e	a	    }
+003d6b69	a	    return total / totalWeight;
+003d6b8c	a	float sampleGreen(float multiplier, float STEPS)
+003d6bbf	a	    float total = 0.0;
+003d6bd6	a	    float totalWeight = 0.0;
+003d6bf3	a	    float redStrideX = strideX;
+003d6c13	a	    float redStrideY = strideY;
+003d6c33	a	    float stepsF = max(STEPS * multiplier, 1.0);
+003d6c69	a	    if(isAngleB)
+003d6c7a	a	    {
+003d6c80	a	        // don't do anything to stride, they are correct
+003d6cb9	a	    }
+003d6cbf	a	    else if(isBlurWidthB)
+003d6cd9	a	    {
+003d6cdf	a	        redStrideY = 0.0;
+003d6cf9	a	    }
+003d6cff	a	    else
+003d6d08	a	    {
+003d6d0e	a	        redStrideX = 0.0;
+003d6d28	a	    }
+003d6d33	a	    for(float i = -stepsF; i <= stepsF; i++)
+003d6d60	a	    {
+003d6d66	a	        vec2 texCoord = out_uvs + vec2(i * redStrideX, i * redStrideY);
+003d6dae	a	        float weight = getWeight(i / stepsF);
+003d6ddc	a	        total += weight * texture(videoTexture, texCoord).g;
+003d6e19	a	        totalWeight += weight;
+003d6e38	a	    }
+003d6e43	a	    return total / totalWeight;
+003d6e66	a	float sampleBlue(float multiplier, float STEPS)
+003d6e98	a	    float total = 0.0;
+003d6eaf	a	    float totalWeight = 0.0;
+003d6ecc	a	    float redStrideX = strideX;
+003d6eec	a	    float redStrideY = strideY;
+003d6f0c	a	    float stepsF = max(STEPS * multiplier, 1.0);
+003d6f42	a	    if(isAngleB)
+003d6f53	a	    {
+003d6f59	a	        // don't do anything to stride, they are correct
+003d6f92	a	    }
+003d6f98	a	    else if(isBlurWidthB)
+003d6fb2	a	    {
+003d6fb8	a	        redStrideY = 0.0;
+003d6fd2	a	    }
+003d6fd8	a	    else
+003d6fe1	a	    {
+003d6fe7	a	        redStrideX = 0.0;
+003d7001	a	    }
+003d700c	a	    for(float i = -stepsF; i <= stepsF; i++)
+003d7039	a	    {
+003d703f	a	        vec2 texCoord = out_uvs + vec2(i * redStrideX, i * redStrideY);
+003d7087	a	        float weight = getWeight(i / stepsF);
+003d70b5	a	        total += weight * texture(videoTexture, texCoord).b;
+003d70f2	a	        totalWeight += weight;
+003d7111	a	    }
+003d711c	a	    return total / totalWeight;
+003d713e	a	// end shader
+003d7151	a	// begin shader
+003d7161	a	#version 330
+003d716e	a	uniform sampler2D videoTexture;
+003d718e	a	uniform vec2 srcResolution;
+003d71ab	a	in vec2 out_uvs;
+003d71bc	a	out vec3 colourOut;
+003d71d1	a	void main()
+003d71df	a	    vec2 srcTexelSize = 1.0 / srcResolution;
+003d720c	a	    float x = srcTexelSize.x;
+003d722a	a	    float y = srcTexelSize.y;
+003d7249	a	    // Take 13 samples around current texel:
+003d7276	a	    // a - b - c
+003d7287	a	    // - j - k -
+003d7298	a	    // d - e - f
+003d72a9	a	    // - l - m -
+003d72ba	a	    // g - h - i
+003d72cb	a	    // === ('e' is the current texel) ===
+003d72f5	a	    vec3 a = texture(videoTexture, vec2(out_uvs.x - 2*x, out_uvs.y + 2*y)).rgb;
+003d7345	a	    vec3 b = texture(videoTexture, vec2(out_uvs.x,       out_uvs.y + 2*y)).rgb;
+003d7395	a	    vec3 c = texture(videoTexture, vec2(out_uvs.x + 2*x, out_uvs.y + 2*y)).rgb;
+003d73e6	a	    vec3 d = texture(videoTexture, vec2(out_uvs.x - 2*x, out_uvs.y)).rgb;
+003d7430	a	    vec3 e = texture(videoTexture, vec2(out_uvs.x,       out_uvs.y)).rgb;
+003d747a	a	    vec3 f = texture(videoTexture, vec2(out_uvs.x + 2*x, out_uvs.y)).rgb;
+003d74c5	a	    vec3 g = texture(videoTexture, vec2(out_uvs.x - 2*x, out_uvs.y - 2*y)).rgb;
+003d7515	a	    vec3 h = texture(videoTexture, vec2(out_uvs.x,       out_uvs.y - 2*y)).rgb;
+003d7565	a	    vec3 i = texture(videoTexture, vec2(out_uvs.x + 2*x, out_uvs.y - 2*y)).rgb;
+003d75b6	a	    vec3 j = texture(videoTexture, vec2(out_uvs.x - x, out_uvs.y + y)).rgb;
+003d7602	a	    vec3 k = texture(videoTexture, vec2(out_uvs.x + x, out_uvs.y + y)).rgb;
+003d764e	a	    vec3 l = texture(videoTexture, vec2(out_uvs.x - x, out_uvs.y - y)).rgb;
+003d769a	a	    vec3 m = texture(videoTexture, vec2(out_uvs.x + x, out_uvs.y - y)).rgb;
+003d76e7	a	    // Apply weighted distribution:
+003d770b	a	    // 0.5 + 0.125 + 0.125 + 0.125 + 0.125 = 1
+003d773a	a	    // a,b,d,e * 0.125
+003d7751	a	    // b,c,e,f * 0.125
+003d7768	a	    // d,e,g,h * 0.125
+003d777f	a	    // e,f,h,i * 0.125
+003d7796	a	    // j,k,l,m * 0.5
+003d77ab	a	    // This shows 5 square areas that are being sampled. But some of them overlap,
+003d77fe	a	    // so to have an energy preserving downsample we need to make some adjustments.
+003d7852	a	    // The weights are the distributed, so that the sum of j,k,l,m (e.g.)
+003d789c	a	    // contribute 0.5 to the final color output. The code below is written
+003d78e7	a	    // to effectively yield this sum. We get:
+003d7915	a	    // 0.125*5 + 0.03125*4 + 0.0625*4 = 1
+003d793f	a	    vec3 downsample = e*0.125;
+003d795e	a	    downsample += (a+c+g+i)*0.03125;
+003d7983	a	    downsample += (b+d+f+h)*0.0625;
+003d79a7	a	    downsample += (j+k+l+m)*0.125;
+003d79cf	a	    colourOut = downsample;
+003d79ed	a	// end shader
+003d7a01	a	// begin shader
+003d7a11	a	#version 330
+003d7a1f	a	in vec2 out_uvs;
+003d7a30	a	out vec3 FragColor;
+003d7a45	a	uniform sampler2D videoTexture;
+003d7a66	a	void main()
+003d7a74	a	    FragColor = texture(videoTexture, out_uvs).rgb;
+003d7aaa	a	// end shader
+003d7ac1	a	// begin shader
+003d7ad1	a	#version 330
+003d7adf	a	uniform sampler2D videoTexture;
+003d7aff	a	uniform sampler2D inputTexture;
+003d7b20	a	uniform int gammaCorrect;
+003d7b3a	a	uniform int blendMode;
+003d7b51	a	uniform int tintMode;
+003d7b68	a	uniform float exposure;
+003d7b80	a	uniform vec3 tintColor;
+003d7b98	a	uniform vec3 tintColorOuter;
+003d7bb5	a	uniform float tintMix;
+003d7bcc	a	uniform int tintMultiB;
+003d7be5	a	uniform int tonemapE;
+003d7bfb	a	uniform float clampMixF;
+003d7c15	a	out vec3 FragColour;
+003d7c2a	a	in vec2 out_uvs;
+003d7c3c	a	// debug
+003d7c45	a	uniform int simple_exposureB;
+003d7c63	a	uniform float custom_gammaF;
+003d7c81	a	const float eps = 1e-5; // 0.0001 for hable filmic
+003d7cb5	a	// faux enums
+003d7cc3	a	const int BLEND_MODE_SCREEN             = 1;
+003d7cf0	a	const int BLEND_MODE_ADD                = 2;
+003d7d1e	a	const int TONEMAP_MODE_NONE
+003d7d42	a	const int TONEMAP_MODE_BREAK
+003d7d66	a	const int TONEMAP_MODE_ACES_FILMIC
+003d7d8f	a	const int TONEMAP_MODE_FILMIC
+003d7db4	a	const int TONEMAP_MODE_HABLE
+003d7dd8	a	const int TONEMAP_MODE_REINHARD
+003d7df9	a	    = 6;
+003d7e02	a	const int TONEMAP_MODE_REINHARD_2
+003d7e2a	a	const int TONEMAP_MODE_BREAK_2
+003d7e50	a	const int TONEMAP_MODE_CLAMP_CHROMA
+003d7e7b	a	const int TINT_BLEND_MULTIPLY           = 1;
+003d7ea8	a	const int TINT_BLEND_OVERLAY            = 2;
+003d7ed5	a	const int TINT_BLEND_SOFT_LIGHT         = 3;
+003d7f03	a	float rand(vec2 co);
+003d7f18	a	vec3 overlayV(vec3 bg, vec3 fg);
+003d7f39	a	vec3 softLightV(vec3 a, vec3 b);
+003d7f5b	a	vec3 aces_filmic(vec3 x);
+003d7f75	a	vec3 filmic(vec3 x);
+003d7f8a	a	//vec3 lottes(vec3 x); // let's not
+003d7fae	a	vec3 reinhard2(vec3 x);
+003d7fc6	a	float luminance(vec3 v);
+003d7fdf	a	vec3 change_luminance(vec3 c_in, float l_out);
+003d800e	a	vec3 reinhard_extended_luminance(vec3 v, float max_white_l);
+003d804b	a	vec3 uncharted2_tonemap_partial(vec3 x);
+003d8074	a	vec3 uncharted2_filmic(vec3 v);
+003d8094	a	//vec3 uchimura(vec3 x, float P, float a, float m, float l, float c, float b); // not implemented
+003d80f6	a	//vec3 uchimura(vec3 x);
+003d8110	a	vec3 DoTonemap(vec3 result);
+003d812d	a	vec3 DoTint(vec3 FragColour);
+003d814c	a	void main(void) // POSTPROCESS FRAG
+003d8172	a	    FragColour = texture(videoTexture, out_uvs).brg; // swizzle here so i can address specfic channels correctly
+003d81e4	a	    if(simple_exposureB == 1)
+003d8202	a	    {
+003d8208	a	        FragColour *= vec3(exposure);
+003d822e	a	    }
+003d8234	a	    else
+003d823d	a	    {
+003d8243	a	        if(blendMode == BLEND_MODE_SCREEN)
+003d826e	a	            FragColour *= vec3(exposure); // don't lower screen exposure rate otherwise in values of 1 will end up ~0.75! Glow should not make output darker than input
+003d8316	a	    }
+003d8321	a	    if(tintMix > 0.0) // how we know if we're tinting or not. if tint mix is 100 but tint is turned off, tint mix will actually be 0
+003d83a6	a	    {
+003d83ac	a	        FragColour = DoTint(FragColour);
+003d83d5	a	    }
+003d83e0	a	    if(tonemapE >= TONEMAP_MODE_ACES_FILMIC && clampMixF > 0.01) // do clamp at last minute: after blending but before gamma. they are all expected to be linear values
+003d8488	a	    {
+003d848e	a	        FragColour = DoTonemap(FragColour);
+003d84ba	a	    }
+003d84c5	a	    if(gammaCorrect == 1)   
+003d84e2	a	        FragColour = pow(FragColour, vec3(1.0 / custom_gammaF));
+003d8528	a	    if(blendMode == BLEND_MODE_SCREEN)
+003d854f	a	        FragColour = min(FragColour, 1.0); // screen, clamp to 1.0
+003d8593	a	    //FragColour = texture(videoTexture, out_uvs).rgb; // debug: just the raw input
+003d85e7	a	    //FragColour = vec3(0.5);
+003d8606	a	    //FragColour = vec3(distF);
+003d8629	a	vec3 DoTint(vec3 FragColour)
+003d8648	a	    vec3 TintFrag;
+003d865b	a	    vec3 TintFrag2;
+003d8670	a	    vec3 tintColorA = tintColor;
+003d8691	a	    vec3 tintColorB = tintColorOuter;
+003d86b8	a	    switch (tintMode)
+003d86ce	a	    {
+003d86d4	a	        case TINT_BLEND_MULTIPLY:
+003d86f6	a	            TintFrag = FragColour * tintColorA;
+003d8726	a	            break;
+003d8739	a	        case TINT_BLEND_OVERLAY:
+003d875a	a	        {
+003d8764	a	            vec3 a = pow(FragColour, vec3(0.45));
+003d8796	a	            vec3 b = pow(tintColorA, vec3(0.45));
+003d87c8	a	            TintFrag = overlayV(a, b);
+003d87ef	a	            TintFrag = pow(TintFrag, vec3(2.22));
+003d8821	a	            break;
+003d8834	a	        }
+003d883e	a	        case TINT_BLEND_SOFT_LIGHT:
+003d8862	a	            FragColour = min(FragColour, vec3(1.0)); // need to clamp otherwise negative values
+003d88c2	a	            TintFrag = softLightV(FragColour, tintColorA);
+003d88fd	a	            break;
+003d8910	a	    }
+003d8918	a	    if (tintMultiB == 1)
+003d8931	a	    {
+003d8937	a	        switch (tintMode)
+003d8951	a	        {
+003d895b	a	            case TINT_BLEND_MULTIPLY:
+003d8981	a	                TintFrag2 = FragColour * tintColorB;
+003d89b6	a	                break;
+003d89cd	a	            case TINT_BLEND_OVERLAY:
+003d89f2	a	            {
+003d8a00	a	                vec3 a = pow(FragColour, vec3(0.45));
+003d8a36	a	                vec3 b = pow(tintColorB, vec3(0.45));
+003d8a6c	a	                TintFrag2 = overlayV(a, b);
+003d8a98	a	                TintFrag2 = pow(TintFrag2, vec3(2.2));
+003d8acf	a	                break;
+003d8ae6	a	            }
+003d8af4	a	            case TINT_BLEND_SOFT_LIGHT: // (FragColour already clamped in first tint)
+003d8b4a	a	                TintFrag2 = softLightV(FragColour, tintColorB);
+003d8b8a	a	                break;
+003d8ba1	a	        }
+003d8bac	a	        vec3 inner = TintFrag;
+003d8bcb	a	        vec3 outer = TintFrag2;
+003d8bec	a	        TintFrag = mix(inner, outer, min(FragColour, vec3(1.0)));
+003d8c2e	a	    }
+003d8c35	a	    FragColour = mix(FragColour, TintFrag, tintMix);
+003d8c6a	a	    FragColour = max(FragColour, vec3(0.0)); // required otherwise NaN pixels from > 1.0 tintMixF
+003d8ccd	a	    return FragColour;
+003d8ce7	a	vec3 DoTonemap(vec3 result)
+003d8d05	a	    vec3 tonemap = result;
+003d8d21	a	    switch (tonemapE)
+003d8d37	a	    {
+003d8d3d	a	        case TONEMAP_MODE_ACES_FILMIC:
+003d8d64	a	            tonemap = aces_filmic(result.rgb);
+003d8d93	a	            break;
+003d8da6	a	        case TONEMAP_MODE_FILMIC:
+003d8dc8	a	            tonemap = filmic(result.rgb);
+003d8df2	a	            break;
+003d8e05	a	        case TONEMAP_MODE_HABLE:
+003d8e26	a	            tonemap = uncharted2_filmic(result.rgb);
+003d8e5b	a	            break;
+003d8e6e	a	        case TONEMAP_MODE_REINHARD:
+003d8e92	a	            tonemap = result.rgb / (result.rgb + vec3(1.0));
+003d8ecf	a	            break;
+003d8ee2	a	        case TONEMAP_MODE_REINHARD_2:
+003d8f08	a	            tonemap = reinhard2(result.rgb);
+003d8f35	a	            break;
+003d8f48	a	        case TONEMAP_MODE_CLAMP_CHROMA:
+003d8f70	a	        {
+003d8f7a	a	            float l = dot(vec3(0.2126, 0.7152, 0.0722), tonemap);
+003d8fbc	a	            float desaturateAmount = clamp(l, 0.0, 1.0);
+003d8ff5	a	            tonemap = mix(tonemap, vec3(l), desaturateAmount);
+003d9034	a	            tonemap = max(tonemap, vec3(0.0)); // clamp neg
+003d9070	a	            break;
+003d9083	a	        }
+003d908d	a	        // utility
+003d90a0	a	        case TONEMAP_MODE_BREAK_2:
+003d90c3	a	        case TONEMAP_MODE_BREAK:
+003d90e4	a	        case TONEMAP_MODE_NONE:
+003d9104	a	        default:
+003d9115	a	            break;
+003d9128	a	    }
+003d912f	a	    tonemap.rgb = mix(result.rgb, tonemap, vec3(clampMixF));
+003d9171	a	    return tonemap;
+003d9188	a	float rand(vec2 co) { return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453) * 0.0035; }
+003d91ec	a	vec3 overlayV(vec3 bg, vec3 fg) {
+003d920e	a	    return mix(2.0 * bg * fg, 1.0 - 2.0 * (1.0 - bg) * (1.0 - fg), step(0.5, bg));
+003d9264	a	vec3 softLightV(vec3 a, vec3 b) { return ((vec3(1) - (vec3(2) * b)) * pow(a, vec3(2))) + (vec3(2) * b * a); } // pegtop formula
+003d92e5	a	// tonemap implementations
+003d9300	a	vec3 aces_filmic(vec3 x) {
+003d931b	a	    float a = 2.51;
+003d932f	a	    float b = 0.03;
+003d9343	a	    float c = 2.43;
+003d9357	a	    float d = 0.59;
+003d936b	a	    float e = 0.14;
+003d937f	a	    return clamp((x * (a * x + b)) / (x * (c * x + d) + e), 0.0, 1.0);
+003d93c9	a	vec3 filmic(vec3 x) {
+003d93df	a	    vec3 X = max(vec3(0.0), x - 0.004);
+003d9407	a	    vec3 result = (X * (6.2 * X + 0.5)) / (X * (6.2 * X + 1.7) + 0.06);
+003d944f	a	    return pow(result, vec3(2.2)); // don't be fooled, this is correct
+003d9499	a	vec3 reinhard2(vec3 x) {
+003d94b2	a	    const float L_white = 4.0;
+003d94d1	a	    return (x * (1.0 + x / (L_white * L_white))) / (1.0 + x);
+003d9512	a	vec3 uncharted2_tonemap_partial(vec3 x)
+003d953c	a	    float A = 0.15f;
+003d9551	a	    float B = 0.50f;
+003d9566	a	    float C = 0.10f;
+003d957b	a	    float D = 0.20f;
+003d9590	a	    float E = 0.02f;
+003d95a5	a	    float F = 0.30f;
+003d95bc	a	// Calculate intermediate values with higher precision
+003d95f3	a	    //vec3 num = x*(A*x+C*B)+D*E;
+003d9615	a	    //vec3 den = x*(A*x+B)+D*F;
+003d9635	a	    //return (num/den)-E/F;
+003d9653	a	// Add epsilon to prevent division by very small numbers
+003d968c	a	    x = max(vec3(eps), x);
+003d96a7	a	    return ((x*(A*x+C*B)+D*E)/(x*(A*x+B)+D*F))-E/F;
+003d96de	a	vec3 uncharted2_filmic(vec3 v)
+003d96ff	a	    float exposure_bias = 2.0f;
+003d971f	a	    vec3 curr = uncharted2_tonemap_partial(v * exposure_bias);
+003d975f	a	    vec3 W = vec3(11.2f);
+003d9779	a	    vec3 white_scale = vec3(1.0f) / uncharted2_tonemap_partial(W);
+003d97bc	a	    return curr * white_scale;
+003d97e1	a	vec3 lottes(vec3 x) {
+003d97f7	a	    const vec3 a = vec3(1.6);
+003d9815	a	    const vec3 d = vec3(0.977);
+003d9835	a	    const vec3 hdrMax = vec3(8.0);
+003d9858	a	    const vec3 midIn = vec3(0.18);
+003d987b	a	    const vec3 midOut = vec3(0.267);
+003d98a1	a	    const vec3 b =
+003d98b4	a	    (-pow(midIn, a) + pow(hdrMax, a) * midOut) /
+003d98e5	a	    ((pow(hdrMax, a * d) - pow(midIn, a * d)) * midOut);
+003d991e	a	    const vec3 c =
+003d9931	a	    (pow(hdrMax, a * d) * pow(midIn, a) - pow(hdrMax, a) * pow(midIn, a * d) * midOut) /
+003d998a	a	    ((pow(hdrMax, a * d) - pow(midIn, a * d)) * midOut);
+003d99c4	a	    return pow(x, a) / (pow(x, a * d) * b + c);
+003d99f7	a	vec3 uchimura(vec3 x, float P, float a, float m, float l, float c, float b) {
+003d9a45	a	    float l0 = ((P - m) * l) / a;
+003d9a67	a	    float L0 = m - m / a;
+003d9a81	a	    float L1 = m + (1.0 - m) / a;
+003d9aa3	a	    float S0 = m + l0;
+003d9aba	a	    float S1 = m + a * l0;
+003d9ad5	a	    float C2 = (a * P) / (P - S1);
+003d9af8	a	    float CP = -C2 / P;
+003d9b11	a	    vec3 w0 = vec3(1.0 - smoothstep(0.0, m, x));
+003d9b42	a	    vec3 w2 = vec3(step(m + l0, x));
+003d9b67	a	    vec3 w1 = vec3(1.0 - w0 - w2);
+003d9b8b	a	    vec3 T = vec3(m * pow(x / m, vec3(c)) + b);
+003d9bbb	a	    vec3 S = vec3(P - (P - S1) * exp(CP * (x - S0)));
+003d9bf1	a	    vec3 L = vec3(m + a * (x - m));
+003d9c16	a	    return T * w0 + L * w1 + S * w2;
+003d9c3e	a	vec3 uchimura(vec3 x) {
+003d9c56	a	    const float P = 1.0;  // max display brightness
+003d9c8a	a	    const float a = 1.0;  // contrast
+003d9cb0	a	    const float m = 0.22; // linear section start
+003d9ce2	a	    const float l = 0.4;  // linear section length
+003d9d15	a	    const float c = 1.33; // black
+003d9d38	a	    const float b = 0.0;  // pedestal
+003d9d5f	a	    return uchimura(x, P, a, m, l, c, b);
+003d9d8e	a	// end shader
+003d9da1	a	// begin shader
+003d9db1	a	#version 330
+003d9dbe	a	                             
+003d9ddc	a	uniform sampler2D videoTexture;
+003d9dfd	a	uniform int gammaCorrect;
+003d9e17	a	uniform float threshold;
+003d9e30	a	uniform float thresholdSmooth;
+003d9e4f	a	uniform float satBiasF;
+003d9e67	a	uniform float exposure;
+003d9e7f	a	uniform int viewE;
+003d9e92	a	uniform int blendModeE;
+003d9eab	a	uniform int threshold_modeE;
+003d9ec8	a	uniform int aberration_modeE;
+003d9ee6	a	uniform vec2 aberration_amountF;
+003d9f08	a	// debug
+003d9f11	a	uniform int simple_exposureB;
+003d9f2f	a	uniform float custom_gammaF;
+003d9f4d	a	const int VIEW_FINAL_RESULT = 1;
+003d9f6e	a	const int VIEW_INPUT        = 2;
+003d9f90	a	const int BLEND_MODE_SCREEN = 1;
+003d9fb1	a	const int BLEND_MODE_ADD    = 2;
+003d9fd3	a	const int ABERRATION_MODE_NONE = 0;
+003d9ff7	a	const int ABERRATION_MODE_R_G = 1;
+003da01a	a	const int ABERRATION_MODE_R_B = 2;
+003da03d	a	const int ABERRATION_MODE_G_B = 3;
+003da061	a	const int THRESHOLD_MODE_CHROMA = 1;
+003da086	a	const int THRESHOLD_MODE_LUMA   = 2;
+003da0ac	a	out vec3 FragColour; // preProcess must swizzle any texture lookups since we're not doing the traditional CPU upload
+003da121	a	in vec2 out_uvs;
+003da133	a	// handle HDR values
+003da148	a	float rgb2s(vec3 c)
+003da15e	a	    float maxVal = max(max(c.r, c.g), c.b);
+003da18a	a	    if (maxVal > 1.0)
+003da1a0	a	    {
+003da1a6	a	        c /= maxVal;
+003da1bb	a	    }
+003da1c2	a	    float minVal = min(min(c.r, c.g), c.b);
+003da1ee	a	    float delta = maxVal - minVal;
+003da211	a	    float s = 0.0;
+003da225	a	    if (maxVal != 0.0)
+003da23c	a	    {
+003da242	a	        s = delta / maxVal;
+003da25e	a	    }
+003da265	a	    return s;
+003da276	a	void main(void)
+003da288	a	    FragColour = texture(videoTexture, out_uvs).gbr;
+003da2be	a	    // this has to happen before thresholding, otherwise we would need to individually do thresholding to each of our 3 samples. may be affected by sat bias
+003da35b	a	    if(aberration_modeE != ABERRATION_MODE_NONE)
+003da38c	a	    {
+003da392	a	        vec3 sample_a, sample_b;
+003da3b3	a	        
+003da3bc	a	        sample_a = texture(videoTexture, out_uvs + aberration_amountF).rgb;
+003da408	a	        sample_b = texture(videoTexture, out_uvs - aberration_amountF).rgb;
+003da454	a	        
+003da45d	a	        if(aberration_modeE == ABERRATION_MODE_R_G)
+003da491	a	        {
+003da49b	a	            FragColour.b = sample_a.r;
+003da4c2	a	            FragColour.r = sample_b.g;
+003da4e9	a	        }
+003da4f3	a	        else if(aberration_modeE == ABERRATION_MODE_R_B)
+003da52c	a	        {
+003da536	a	            FragColour.b = sample_a.r;
+003da55d	a	            FragColour.g = sample_b.b;
+003da584	a	        }
+003da58e	a	        else // ABERRATION_MODE_G_B
+003da5b2	a	        {
+003da5bc	a	            FragColour.r = sample_a.g;
+003da5e3	a	            FragColour.g = sample_b.b;
+003da60a	a	        }
+003da614	a	        
+003da61d	a	        //FragColour.r += 0.1; // debug bounds of layer
+003da655	a	    }
+003da660	a	    FragColour = max(FragColour, vec3(0.0)); // remove any potential negative values since we don't do this on upload
+003da6d7	a	    // thresholding with smooth
+003da6f7	a	    if(threshold > 0.0)
+003da70f	a	    {
+003da715	a	        // red channel is green
+003da735	a	        // green channel is blue
+003da756	a	        // blue channel is red
+003da776	a	        if(threshold_modeE == THRESHOLD_MODE_LUMA)
+003da7a9	a	        {
+003da7b3	a	            // !!! remember the RGB coefficients have been swizzled to match my channel order
+003da811	a	            float luminance = dot(FragColour.rgb, vec3(0.7152, 0.0722, 0.2126)); // Step 1: Convert RGB to perceived luminance using rec701 coefficients (ae uses rec601).
+003da8bc	a	            float luminanceMask = smoothstep(threshold - thresholdSmooth, threshold + thresholdSmooth, luminance); // Step 2: Apply threshold to luminance only
+003da95c	a	            FragColour *= luminanceMask; // Step 3: Apply the mask to preserve original color relationships
+003da9c8	a	            
+003da9d5	a	            // debug: just show the luminance
+003daa03	a	            //FragColour.rgb = vec3(dot(FragColour.rgb, vec3(0.7152, 0.0722, 0.2126))); // !!! remember the RGB coefficients have been swizzled to match my channel order
+003daaad	a	        }
+003daab7	a	        else // THRESHOLD_MODE_CHROMA
+003daadd	a	        {
+003daae7	a	            vec3 FragColourCopy = FragColour;
+003dab16	a	            FragColour *= smoothstep(threshold - thresholdSmooth, threshold + thresholdSmooth, FragColour);
+003dab82	a	            
+003dab8f	a	            if(satBiasF != 0.0)
+003dabaf	a	            {
+003dabbd	a	                float s = rgb2s(FragColourCopy);
+003dabee	a	                
+003dabff	a	                if(satBiasF < 0.00)
+003dac23	a	                {
+003dac35	a	                    s = 1.0 - s;
+003dac56	a	                }
+003dac68	a	                
+003dac79	a	                FragColourCopy *= smoothstep(threshold - thresholdSmooth, threshold + thresholdSmooth, s);
+003dace4	a	                FragColour = mix(FragColour, FragColourCopy, abs(satBiasF));
+003dad31	a	                //FragColour.rgb = vec3(s); // debug just the saturation
+003dad7a	a	            }
+003dad88	a	        }
+003dad92	a	    }
+003dad99	a	    if(viewE == VIEW_INPUT) // user is viewing source
+003dadcf	a	    {
+003dadd5	a	        FragColour = FragColour.brg; // swizzle so viewing is correct
+003dae1b	a	        
+003dae24	a	        if(gammaCorrect == 1) // gamma back for display, not handled on download
+003dae75	a	            FragColour = pow(FragColour, vec3(1.0 / custom_gammaF));
+003daeba	a	    }
+003daec0	a	    else // keep going as usual, we're not displaying it before blur loop
+003daf0a	a	    {
+003daf10	a	        if(simple_exposureB == 1)
+003daf32	a	        {
+003daf3c	a	            // no exposure happens here, unified in post proc
+003daf7a	a	            if(blendModeE == BLEND_MODE_SCREEN)
+003dafaa	a	            {
+003dafb8	a	                FragColour = min(FragColour, vec3(1.0)); // if screen, clamp all values at 1.0 and do exposure as post process. why? bad results otherwise, see docs
+003db05d	a	            }
+003db06b	a	        }
+003db075	a	        else
+003db082	a	        {
+003db08c	a	            if(blendModeE == BLEND_MODE_SCREEN)
+003db0bc	a	            {
+003db0ca	a	                FragColour = min(FragColour, vec3(1.0)); // if screen, clamp all values at 1.0 and do exposure as post process. why? bad results otherwise, see docs
+003db16f	a	            }
+003db17d	a	            else // BLEND_MODE_ADD
+003db1a0	a	            {
+003db1ae	a	                FragColour *= vec3(exposure); // if add, multiply colour channels by exposure. NOTE: under which circumstance did i want to reduce the expoure by half?
+003db256	a	            }
+003db264	a	        }
+003db26e	a	    }
+003db279	a	    if(gammaCorrect == 1) // do gamma correct as late as possible so i don't have to worry about gamma correcting all the uniforms
+003db2fc	a	    {
+003db302	a	        FragColour = pow(FragColour, vec3(custom_gammaF));
+003db33d	a	    }
+003db346	a	// end shader
+003db361	a	// begin shader
+003db371	a	#version 330
+003db37e	a	uniform sampler2D videoTexture;
+003db39f	a	// we need in and out res for this, higher quality at high downsampling
+003db3e7	a	uniform vec2 in_res;
+003db3fc	a	uniform vec2 out_res;
+003db413	a	in vec2 out_uvs;
+003db424	a	out vec3 colourOut;
+003db439	a	void main()
+003db447	a	    // Calculate aspect ratio correction
+003db470	a	    vec2 aspectRatio = in_res / out_res;
+003db49a	a	    // Calculate texel size
+003db4b6	a	    vec2 texelSize = 1.0 / in_res;
+003db4da	a	    // Calculate adjusted offsets
+003db4fc	a	    vec2 offset = texelSize * aspectRatio;
+003db528	a	    // Take 9 samples around current texel:
+003db554	a	    // a - b - c
+003db565	a	    // d - e - f
+003db576	a	    // g - h - i
+003db587	a	    // === ('e' is the current texel) ===
+003db5b1	a	    vec3 a = texture(videoTexture, out_uvs + vec2(-offset.x,  offset.y)).rgb;
+003db5ff	a	    vec3 b = texture(videoTexture, out_uvs + vec2(0,          offset.y)).rgb;
+003db64d	a	    vec3 c = texture(videoTexture, out_uvs + vec2( offset.x,  offset.y)).rgb;
+003db69c	a	    vec3 d = texture(videoTexture, out_uvs + vec2(-offset.x,  0)).rgb;
+003db6e3	a	    vec3 e = texture(videoTexture, out_uvs).rgb;
+003db714	a	    vec3 f = texture(videoTexture, out_uvs + vec2( offset.x,  0)).rgb;
+003db75c	a	    vec3 g = texture(videoTexture, out_uvs + vec2(-offset.x, -offset.y)).rgb;
+003db7aa	a	    vec3 h = texture(videoTexture, out_uvs + vec2(0,         -offset.y)).rgb;
+003db7f8	a	    vec3 i = texture(videoTexture, out_uvs + vec2( offset.x, -offset.y)).rgb;
+003db847	a	    // Apply weighted distribution, using a 3x3 tent filter:
+003db884	a	    //  1   | 1 2 1 |
+003db89a	a	    // -- * | 2 4 2 |
+003db8b0	a	    // 16   | 1 2 1 |
+003db8c6	a	    vec3 upsample = e * 4.0;
+003db8e3	a	    upsample += (b + d + f + h) * 2.0;
+003db90a	a	    upsample += (a + c + g + i);
+003db92b	a	    upsample *= 1.0 / 16.0;
+003db94c	a	    colourOut = upsample;
+003db968	a	// end shader
+003db981	a	// begin shader
+003db991	a	#version 330
+003db99f	a	in vec3 vertex;
+003db9af	a	in vec2 tex;
+003db9bd	a	uniform mat4 xform;
+003db9d2	a	out vec2 out_uvs;
+003db9e5	a	void main()
+003db9f3	a	    gl_Position = vec4(vertex.xyz, 1.0) * xform;
+003dba24	a	    out_uvs = tex;
+003dba39	a	// end shader
+003dba51	a	// begin shader
+003dba61	a	#version 330
+003dba6f	a	in vec3 vertex;
+003dba7f	a	in vec2 tex;
+003dba8d	a	out vec2 out_uvs;
+003dbaa0	a	void main()
+003dbaae	a	    gl_Position = vec4(vertex.xyz, 1.0);
+003dbad7	a	    out_uvs = tex;
+003dbaec	a	// end shader
+003dbb00	a	/Users/jameswhiffin/Dropbox/Dev/DeepGlow2/DeepGlow2/Shaders/debug/
+003dbb50	a	C:\Users\James Whiffin\Dropbox\Dev\DeepGlow2\DeepGlow2\Shaders\debug\
+003dbb98	a	vertIdentity
+003dbbb0	a	preProcess
+003dbbc0	a	downsample
+003dbbd0	a	upsample
+003dbbe0	a	blurUnified
+003dbbf0	a	postProcess
+003dbc00	a	identity
+003dbc10	a	PF Effect UI Suite
+003dbc28	a	Register
+003dbc38	a	\IrisBlurSDK.dll
+003dbc50	a	. Please reinstall plugin, see About & Support for more info.
+003dbc90	a	Error: IrisBlurSDK.dll not found in 
+003dbcb8	a	InitThreadLocalRenderData() couldn't create context
+003dbcf0	a	InitThreadLocalRenderData() !local_render_data.get() -> !globData->gl_ctx
+003dbd58	a	DrawErrorString()
+003dbd70	a	err DrawString() !myCairo.m_success
+003dbda0	a	DrawString() cairoCopy()
+003dbdc0	a	DrawString() transfer_rect()
+003dbde0	a	input_worldP
+003dbdf0	a	output_worldP
+003dbe00	a	lens_dirt_worldP
+003dbe18	a	iris_worldP
+003dbe28	a	satBiasF
+003dbe38	a	threshold
+003dbe48	a	thresholdSmooth
+003dbe58	a	exposure
+003dbe68	a	gammaCorrect
+003dbe78	a	custom_gammaF
+003dbe88	a	blendModeE
+003dbe94	a	viewE
+003dbea0	a	threshold_modeE
+003dbeb0	a	aberration_modeE
+003dbec8	a	aberration_amountF
+003dbee0	a	simple_exposureB
+003dbef8	a	blendMode
+003dbf04	a	unmult
+003dbf10	a	tintMix
+003dbf18	a	clampMixF
+003dbf28	a	tonemapE
+003dbf38	a	tintColor
+003dbf48	a	tintMode
+003dbf58	a	tintMultiB
+003dbf68	a	tintColorOuter
+003dbf78	a	STEPS
+003dbf80	a	fadeMultiplier
+003dbf90	a	bypassB
+003dbf98	a	isBlurWidthB
+003dbfa8	a	isAngleB
+003dbfb8	a	strideX
+003dbfc0	a	strideY
+003dbfc8	a	is_glow_aberrationB
+003dbfe0	a	redMultF
+003dbff0	a	greenMultF
+003dc000	a	blueMultF
+003dc010	a	videoTexture
+003dc020	a	xform
+003dc028	a	srcResolution
+003dc038	a	in_res
+003dc040	a	out_res
+003dc048	a	!blurCacheOBJ
+003dc058	a	IrisBlurGL: 
+003dc068	a	cull_small_valuesB
+003dc080	a	GuidMixInPtr
+003dc090	a	GuidMixInPtr()
+003dc0a0	a	PreRender InitParams()
+003dc0b8	a	ae gave input->output_request of
+003dc0e0	a	calculated extra->output->result_rect
+003dc108	a	calculated extra->output->max_result_rect
+003dc140	a	Deep Glow 2 warning: User requested to view iris input, but no iris layer supplied.
+003dc198	a	Deep Glow 2 warning: User requested to view 
+003dc1c8	a	final result
+003dc1d8	a	lens dirt matte
+003dc1e8	a	lens dirt matted
+003dc200	a	, but no iris layer supplied required to process result
+003dc238	a	Deep Glow 2 warning: User requested to view lens dirt 
+003dc270	a	texture
+003dc278	a	matted to glow
+003dc288	a	, but no lens dirt layer supplied.
+003dc2b0	a	ReleaseCPU()
+003dc2c0	a	CompLensDirt()
+003dc2d0	a	CompSource()
+003dc2e0	a	DoUnmult()
+003dc2f0	a	error on allocating iris_gamma_world
+003dc318	a	error on allocating matte_world
+003dc338	a	Context creation failed with an unexpected exception
+003dc370	a	!in_data->global_data
+003dc388	a	GPU Begin
+003dc3a0	a	!globData->win_dll_successB, please reinstall Deep Glow 2.aex and ensure IrisBlurSDK.dll is installed adjacent to the .aex. Check "About & Support -> Error Log -> Open Error Log" for more detailed information.
+003dc478	a	Threw an unexpected error!
+003dc498	a	Not able to acquire AEFX Suite.
+003dc4c0	w	c:\users\debug\dropbox\dev\deepglow2\deepglow2\include\glm\core\type_vec4.inl
+003dc560	w	i < value_size()
+003dc590	w	c:\users\debug\dropbox\dev\deepglow2\deepglow2\include\glm\core\type_mat4x4.inl
+003dc630	w	i < this->row_size()
+003dc660	w	c:\users\debug\dropbox\dev\deepglow2\deepglow2\include\glm\core\type_vec3.inl
+003dc717	a	?ffffff
+003dcaa0	a	generic
+003dcad8	a	system
+003dcae0	a	unknown error
+003dcb0c	a	exists
+003dcb18	a	input_worldP of size: 
+003dcb30	a	mask_worldP of size: 
+003dcb48	a	output_worldP of size: 
+003dcb60	a	lens_dirt_worldP of size: 
+003dcb80	a	iris_worldP of size: 
+003dcb98	a	PF_Err_NONE
+003dcba8	a	PF_Err_OUT_OF_MEMORY
+003dcbc0	a	PF_Err_INTERNAL_STRUCT_DAMAGED
+003dcbe0	a	PF_Err_INVALID_INDEX
+003dcbf8	a	PF_Err_UNRECOGNIZED_PARAM_TYPE
+003dcc18	a	PF_Err_INVALID_CALLBACK
+003dcc30	a	PF_Err_BAD_CALLBACK_PARAM
+003dcc50	a	PF_Interrupt_CANCEL
+003dcc68	a	PF_Err_CANNOT_PARSE_KEYFRAME_TEXT
+003dcc90	a	unknown error code of 
+003dcf98	w	\PluginEverything\
+003dcfc0	w	deep_glow_2_error_log.txt
+003dd080	a	Failed to open log file: 
+003dd0a0	a	Deep Glow 2 v
+003dd0b0	a	%Y-%m-%d %H:%M:%S
+003dd0c8	a	bad conversion
+003dd350	a	AEGP Memory Suite
+003dd368	a	PF AE App Suite
+003dd378	a	AEGP Utility Suite
+003dd390	a	PF ANSI Suite
+003dd3a0	a	AEGP Persistent Data Suite
+003dd3c0	a	Valid license
+003dd3d0	a	The license has an invalid format
+003dd3f8	a	The license belongs to a different machine
+003dd428	a	License file not found
+003dd440	a	License file is corrupted
+003dd460	a	Generic error
+003dd470	a	There is an issue with the product header
+003dd4a0	a	Trial mode
+003dd4b0	a	The time-limited license has an invalid format
+003dd4e0	a	The license type is not recognized
+003dd508	a	Verification of the license format failed
+003dd538	a	The license is no longer valid
+003dd558	a	The license key is invalid
+003dd578	a	Error reading network adapter data
+003dd5a0	a	License period has not started yet
+003dd5c8	a	License period has ended
+003dd5f0	a	Invalid floating license - Please check that the license code was entered correctly in the server config
+003dd660	a	Cannot connect to the floating license server
+003dd690	a	Floating licenses can only be used with the floating license server
+003dd6e0	a	There are no more free slots for this product on the floating license server
+003dd730	a	The license cannot be found on the floating license server
+003dd770	a	The license you are trying to deactivate is not found on the floating license server
+003dd7c8	a	Your client IP is denied by the floating license server
+003dd800	a	Online activation: the license is invalid
+003dd830	a	Online activation: the license is no longer valid
+003dd870	a	Online activation: maximum number of activations reached - Please deactivate an existing activation before activating this one
+003dd8f0	a	Cannot connect to online activation server
+003dd920	a	Online activation: invalid payload
+003dd950	a	Online activation: missing device ID - This activation needs to be deactivated in your aescripts.com account, please click Get Help for more details
+003dd9f0	a	Online activation: no matching activation found - Please click Get Help for assistance
+003dda50	a	Online activation: missing parameters - Please click Get Help for assistance
+003ddaa0	a	Online activation: invalid response from server - This activation needs to be deactivated in your aescripts.com account, please click Get Help for more details
+003ddb40	a	Online activation: subscription is not valid
+003ddb70	a	Invalid offline activation code
+003ddb90	a	Unknown error
+003ddba0	a	https://aescripts.com/knowledgebase/index/view/faq/floating-license-faq/
+003ddbf0	a	https://aescripts.com/knowledgebase/index/view/faq/license-activation-management/
+003ddc50	a	https://aescripts.com/knowledgebase/index/view/faq/product-subscription-faq/
+003ddca0	a	https://aescripts.com/contact/?direct=1&subject=License%20file%20not%20found%20-3
+003ddd00	a	https://aescripts.com/contact/?direct=1&subject=License%20file%20is%20corrupted%20-4
+003ddd60	a	https://aescripts.com/contact/?direct=1&subject=Generic%20license%20error%20-5
+003dddb0	a	https://aescripts.com/contact/?direct=1&subject=Product%20header%20is%20not%20valid%20-6
+003dde10	a	https://aescripts.com/contact/?direct=1&subject=License%20is%20no%20longer%20valid%20-11
+003dde70	a	https://aescripts.com/contact/?direct=1&subject=License%20key%20is%20invalid%20-12
+003dded0	a	https://aescripts.com/contact/?direct=1&subject=Could%20not%20find%20a%20network%20adapter%20on%20this%20machine%20-14
+003ddf50	a	https://aescripts.com/contact/?direct=1&subject=invalid%20activation%20payload%20-34
+003ddfb0	a	https://aescripts.com/contact/?direct=1&subject=no%20matching%20activation%20id%20-36
+003de010	a	https://aescripts.com/contact/?direct=1&subject=activation%20payload%20missing%20parameters%20-37
+003de080	a	https://aescripts.com/knowledgebase/index/view/faq/license-code-faq/
+003de0c8	a	Title
+003de0d0	a	Message
+003de0dc	a	Cancel
+003de0e8	a	TMsgDlg
+003de0f0	a	Static
+003de100	a	Button
+003de114	a	PEDG2
+003de120	a	DeepGlow2
+003de130	a	Trial License
+003de148	a	Single User
+003de154	a	 User
+003de164	a	 Beta
+003de170	a	 Education
+003de180	a	 Render-Only
+003de190	a	 Floating
+003de1a0	a	 Subscription
+003de1b8	a	 Educational Subscription
+003de1d8	a	 Unknown
+003de1e8	a	 License
+003de1f4	a	Layout
+003de200	a	' has a render-only license that only works in the command-line renderer!
+003de250	a	Deep Glow 2
+003de260	a	The plugin '
+003de274	a	1.0.0
+003de280	a	 Registration
+003de290	a	@REMOTE
+003de298	a	Get Help
+003de2a8	a	Activate
+003de2c0	a	TRIAL VERSION
+003de2ce	a	If you have a license code, please enter it below and click on 'Activate'.
+003de320	a	Deactivate
+003de32c	a	 from 
+003de338	a	Registered to: 
+003de348	a	Activation successful
+003de360	a	Deactivation successful
+003de378	a	https://license.aescripts.com/exchange/
+003de3b0	a	This is a temporary serial number that needs to be exchanged for a permanent license.
+003de406	a	Would you like to go to 
+003de420	a	?serial=
+003de42c	a	Error 
+003de440	a	##DLG_TITLE##
+003de450	a	##DLG_MSG##
+003de460	a	##DLG_BTN1##
+003de470	a	##DLG_BTN2##
+003de480	a	##DLG_BTN3##
+003de498	a	##DLG_SHOWINPUT##
+003de4b0	a	##DLG_INPUT##
+003de4c8	a	Non-matching licensing library versions!
+003de500	a	'%s' is already being used by the maximum number of licenses allowed. You need to release a license from another machine to license this one. Until then, this instance will run in trial mode.
+003de5c0	a	'%s' has been successfully licensed again.
+003de604	a	time: 
+003de610	a	command: 
+003de620	a	license: 
+003de630	a	product version: 
+003de648	a	license version: 
+003de660	a	registered: 
+003de670	a	overused: 
+003de680	a	renderOK: 
+003de690	a	first name: 
+003de6a0	a	last name: 
+003de6b0	a	users: 
+003de6b8	a	license type: 
+003de6c8	a	product ID: 
+003de6d8	a	serial: 
+003de6e8	a	first start: 
+003de6f8	a	days since first start: 
+003de718	a	start date: 
+003de728	a	end date: 
+003de738	a	last result: 
+003de751	a	Simulates a physically accurate glow.
+003de779	a	 2025 Plugin Everything & Rowbyte Software
+003de7a4	a	www.plugineverything.com
+003de7bd	a	www.rowbyte.com
+003de7d1	a	Days since first use: 
+003de7f1	a	Time limited license only valid from 
+003de819	a	Registered to: 
+003de830	a	Error on DoWatermark
+003de848	a	https://www.plugineverything.com/contact
+003de878	a	EffectMain
+003de888	a	Plugin Everything
+003de8a0	a	Threw an unknown exception!
+003deb90	a	AEGP Stream Suite
+003deba8	a	AEGP Dynamic Stream Suite
+003debc8	a	PF Param Utils Suite
+003debe0	a	AEGP Effect Suite
+003debf8	a	PF Color Settings Suite
+003dec10	a	PF ColorParamSuite
+003dec28	a	PF Effect Custom UI Suite
+003dec48	a	DRAWBOT Draw Suite
+003dec60	a	DRAWBOT Supplier Suite
+003dec78	a	DRAWBOT Surface Suite
+003dec98	w	ntdll.dll
+003decb0	a	RtlGetVersion
+003decc0	a	Win 11 
+003decc8	a	Win 10 
+003decd0	a	Win 8.1 
+003dece0	a	About & Support
+003ded00	a	Product Page
+003ded10	a	Free Plugins
+003ded20	a	Get Support
+003ded30	a	Error Logging
+003ded40	a	Open Error Log
+003ded50	a	Open Log Directory
+003ded68	a	Create Test Error
+003ded80	a	Debug Analysis Enable
+003ded98	a	Unlicensed, click 'Register'
+003dedb8	a	to enter your serial key.
+003dede0	a	Glow Mode
+003dedf0	a	Exponential|Lens Iris
+003dee08	a	Blend Mode
+003dee18	a	Screen|Add
+003dee24	a	Radius
+003dee30	a	Exposure
+003dee40	a	Reset Main
+003dee4c	a	Input
+003dee58	a	Threshold Mode
+003dee68	a	Chrominance|Luminance
+003dee80	a	Threshold
+003dee90	a	Threshold Smooth
+003deea8	a	Saturation Bias
+003deeb8	a	Input Masking
+003deec8	a	Warning: enable cont. raster
+003deee8	a	for correct mask behavior
+003def08	a	Mask Layer
+003def18	a	Mask Mode
+003def28	a	Alpha|Luminance
+003def38	a	Mask Invert
+003def48	a	Reset Input
+003def60	a	Iris Layer
+003def70	a	Warning Iris Layer not supplied
+003def90	a	Output will be blank
+003defa8	a	Iris Sampling Quality
+003defc0	a	Lowest|Modest|Standard|Fine|Extreme
+003defe8	a	Iris Iterations
+003deff8	a	Radii Easing
+003df008	a	Reset Iris
+003df014	a	Style
+003df020	a	Gamma Correction
+003df038	a	Scene Gamma: 
+003df048	a	Auto Detect Gamma
+003df060	a	Gamma Info
+003df070	a	Reset Gamma
+003df080	a	Aspect Ratio
+003df090	a	Enable Angle
+003df0a0	a	Aspect Angle
+003df0b0	a	Reset Aspect Ratio
+003df0c8	a	Chromatic Aberration
+003df0e0	a	Enable Pixel Aberration
+003df0f8	a	Aberration Channels
+003df110	a	Red & Green|Red & Blue|Green & Blue
+003df138	a	Pixel Offset
+003df148	a	Enable Glow Aberration
+003df160	a	Multiply Red
+003df170	a	Multiply Green
+003df180	a	Multiply Blue
+003df190	a	Shuffle Channels
+003df1a8	a	Reset Aberration
+003df1c8	a	Tint Mode
+003df1d8	a	Off|(-|Monocolor|Duocolor
+003df1f8	a	Tint Blend Mode
+003df208	a	Multiply|Overlay|Soft Light
+003df224	a	Color
+003df230	a	Color Outer
+003df240	a	Swap Colors
+003df250	a	Tint Strength
+003df260	a	Reset Tint
+003df270	a	Tone Mapping
+003df280	a	Operation
+003df290	a	None|(-|ACES Filmic|Filmic|Hable Filmic|Reinhard|Reinhard 2|(-|Clamp Chroma
+003df2e0	a	Reset Tone Mapping
+003df2f8	a	Lens Dirt Texture
+003df310	a	Texture
+003df318	a	Opacity
+003df320	a	Inherit Glow Color
+003df338	a	Matte Exposure
+003df348	a	Matte Gamma
+003df358	a	Repeat Edges
+003df368	a	Reset Lens Dirt
+003df378	a	Quality
+003df380	a	Quality Preset
+003df390	a	Draft|Low|Medium|Standard|High|Extreme|(-|Custom
+003df3c8	a	Quality Preset Iris
+003df3e0	a	Draft|Low|Medium|Standard|High|Extreme
+003df408	a	Half Float
+003df418	a	(Reduces Mem Usage)
+003df430	a	Resolution
+003df440	a	Steps Multiplier
+003df458	a	Glow Iterations
+003df468	a	Buffer Expansion Mode
+003df480	a	Auto|Comp Size
+003df490	a	Aux Buffer Expansion
+003df4a8	a	Reset Quality
+003df4c0	a	Final Result|Glow Input|(-|View Iris|(-|Lens Dirt Input|Lens Dirt Matte|Lens Dirt Matted
+003df520	a	Final Result|Glow Input|(-|Lens Dirt Input|Lens Dirt Matte|Lens Dirt Matted
+003df570	a	Source Opacity
+003df580	a	Unmult
+003df588	a	(Required for Alpha)
+003df5a0	a	Debug
+003df5a8	a	Pre Proc Solid Fill
+003df5c0	a	Iris Sample Quality
+003df5d8	a	Debug View
+003df5e8	a	Blur W|Blur H|None
+003df600	a	Draw Dimensions Comp UI
+003df618	a	Show Buffers
+003df628	a	cout PreRender Rects
+003df640	a	cout Buffer Dims
+003df658	a	Shaders Per Frame
+003df670	a	Edge Behaviour (Deprecated)
+003df690	a	Repeat|Mirror Repeat|Clamp to Edge|None
+003df6b8	a	Renderer (Deprecated)
+003df6d0	a	OpenGL|Metal
+003df6e0	a	Metal GPU Capture
+003df6f8	a	Simplified Exposure
+003df710	a	Iris Cull Small Values
+003df734	a	Right
+003df73c	a	Bottom
+003df748	a	Deprecated
+003df758	a	Astigmatism
+003df768	a	Enable Astigmatism
+003df780	a	Force Square Ratio
+003df798	a	View Focal Point
+003df7b0	a	Focal Length
+003df7c0	a	Focal Falloff
+003df7d0	a	Lens View
+003df7e0	a	View Iris
+003df7ec	a	Enable
+003df7f8	a	Inner/Outer Bias
+003df810	a	Render Quality (Quantization)
+003df830	a	1x (8px) |2x (16px) |3x (32px) |4x (64px) |5x (128px) |6x (256px)|7x (512px)|8x (1024px)
+003df890	a	PF_CHECKOUT_PARAM index: 
+003df8b0	a	PF_GetPixelFormat
+003df8c8	a	PF_GetPixelFormat returned format of 
+003df8f0	a	Deep Glow 2 Change View
+003df906	w	wNo errors reported. Searched: 
+003df948	a	Test Error
+003df958	a	https://aescripts.com/deep-glow/
+003df980	a	https://www.plugineverything.com/free
+003df9a8	a	https://www.plugineverything.com/dg2-support
+003df9d8	a	\nGamma correction will be applied");
+003dfa00	a	alert("Scene Gamma: 
+003dfa18	a	\nGamma correction won't be applied");
+003dfa40	a	Deep Glow 2 Swap Colors
+003dfa58	a	Deep Glow 2 Shuffle Aberration Amounts
+003dfa80	a	Deep Glow 2 Reset Main
+003dfa98	a	Deep Glow 2 Reset Input
+003dfab0	a	Deep Glow 2 Reset Gamma
+003dfac8	a	Deep Glow 2 Reset Iris
+003dfae0	a	Deep Glow 2 Reset Aspect Ratio
+003dfb00	a	Deep Glow 2 Reset Chromatic Aberration
+003dfb28	a	Deep Glow 2 Reset Tint
+003dfb40	a	Deep Glow 2 Reset Tone Mapping
+003dfb60	a	Deep Glow 2 Reset Lens Dirt Texture
+003dfb88	a	Deep Glow 2 Reset Quality
+003dfba8	a	Color Inner
+003dfbd4	a	MbP?fff?
+003dfbef	a	?333333
+003dfc07	a	@ffffff
+003dfd91	a	Check About & Support -> Open Error Log
+003dfdc8	a	, bot: 
+003dfdd0	a	, right: 
+003dfde0	a	, top: 
+003dfde8	a	[ left: 
+003dfdf8	a	, extend:
+003dfe08	a	, height: 
+003dfe18	a	, width: 
+003dfe24	a	, y: 
+003dfe2c	a	[ x: 
+003dfe80	a	DeepGlow2_OpenGL_Win_Class
+003dff19	a	 A general  OGL error has occured: %i
+003dff40	a	Failed to allocate memory for temporary context
+003dff70	a	Cannot register window class. Error code: 
+003dffa0	a	OpenGL-using FBOs in AE
+003dffb8	a	Window creation failed. Error code: 
+003dffe0	a	Cannot create drawing context. Error code: 

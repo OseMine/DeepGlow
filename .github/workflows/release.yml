@@ -1,0 +1,150 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g. v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+        type: string
+      prerelease:
+        description: 'Mark as prerelease'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  build-all:
+    name: Build ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            artifact_name: DeepGlow2-Linux-x86_64
+            package_cmd: tar -czf
+            package_ext: tar.gz
+          - os: macos-latest
+            artifact_name: DeepGlow2-macOS-universal
+            package_cmd: ditto -c -k --sequesterRsrc --keepParent
+            package_ext: zip
+          - os: windows-latest
+            artifact_name: DeepGlow2-Windows-x64
+            package_cmd: 7z a
+            package_ext: zip
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Clone upstream OpenFX SDK
+        shell: bash
+        run: git clone --depth 1 --branch OFX_Release_1_4_TAG https://github.com/AcademySoftwareFoundation/openfx.git openfx-sdk
+
+      - name: Configure and build (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DOFX_ROOT=${{ github.workspace }}/openfx-sdk
+          cmake --build build --config Release -j$(nproc)
+
+      - name: Configure and build (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DOFX_ROOT=${{ github.workspace }}/openfx-sdk -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64"
+          cmake --build build --config Release -j$(sysctl -n hw.ncpu)
+
+      - name: Configure and build (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          cmake -S . -B build -G "Visual Studio 17 2022" -A x64 -DOFX_ROOT=${{ github.workspace }}/openfx-sdk
+          cmake --build build --config Release -- /m:2
+
+      - name: Run tests
+        shell: bash
+        run: |
+          if [ "$RUNNER_OS" = "Windows" ]; then
+            ./build/Release/DGSmoke.exe
+            ./build/Release/DGHostCheck.exe
+          elif [ "$RUNNER_OS" = "macOS" ]; then
+            ./build/DGSmoke
+            ./build/DGHostCheck
+          else
+            ./build/DGSmoke
+            ./build/DGHostCheck
+          fi
+
+      - name: Package (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          mkdir -p dist
+          tar -czf dist/${{ matrix.artifact_name }}.tar.gz -C build/bundle DeepGlow2.ofx.bundle
+
+      - name: Package (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          mkdir -p dist
+          ditto -c -k --sequesterRsrc --keepParent build/bundle/DeepGlow2.ofx.bundle dist/${{ matrix.artifact_name }}.zip
+
+      - name: Package (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          mkdir -p dist
+          7z a dist/${{ matrix.artifact_name }}.zip .\build\bundle\DeepGlow2.ofx.bundle
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact_name }}
+          path: dist/*
+          if-no-files-found: error
+
+  release:
+    needs: build-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Prepare release assets
+        run: |
+          mkdir -p release
+          find artifacts -type f \( -name '*.tar.gz' -o -name '*.zip' \) -exec cp {} release/ \;
+          cd release
+          sha256sum *.tar.gz *.zip > SHA256SUMS.txt 2>/dev/null || true
+          ls -lh
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag }}
+          name: DeepGlow 2 ${{ inputs.tag }}
+          prerelease: ${{ inputs.prerelease }}
+          draft: false
+          files: |
+            release/*.tar.gz
+            release/*.zip
+            release/SHA256SUMS.txt
+          body: |
+            ## DeepGlow 2 OFX Plugin
+            
+            Build from commit ${{ github.sha }}
+            
+            ### Installation
+            Extract the bundle to your OFX plugins directory:
+            - **Windows**: `C:\Program Files\Common Files\OFX\Plugins\`
+            - **macOS**: `/Library/OFX/Plugins/` or `~/Library/OFX/Plugins/`
+            - **Linux**: `/usr/OFX/Plugins/` or `~/.OFX/Plugins/`
+            
+            See [README](https://github.com/${{ github.repository }}/blob/main/README.md) for details.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

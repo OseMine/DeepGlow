@@ -1,0 +1,221 @@
+00015d6d  jle 0x180016137
+00015d73  mov rbx, r12
+00015d76  mov qword ptr [rsp + 0x58], rbx
+00015d7b  mov rcx, qword ptr [rbp - 0x78]
+00015d7f  mov rdx, qword ptr [rbp - 0x70]
+00015d83  sub rdx, rcx
+00015d86  movabs rax, 0x4924924924924925
+00015d90  imul rdx
+00015d93  mov r15, rdx
+00015d96  sar r15, 4
+00015d9a  mov rax, r15
+00015d9d  shr rax, 0x3f
+00015da1  add r15, rax
+00015da4  mov qword ptr [rsp + 0x78], r15
+00015da9  mov rax, qword ptr [rbp + 0x10]
+00015dad  mov r14, rax
+00015db0  mov qword ptr [rsp + 0x68], rax
+00015db5  sub rcx, rax
+00015db8  mov qword ptr [rbp - 0x60], rcx
+00015dbc  nop dword ptr [rax]
+00015dc0  mov r9d, r13d
+00015dc3  mov r8b, 1
+00015dc6  mov rdx, rdi
+00015dc9  lea rcx, [rbp - 0x30]
+00015dcd  call 0x18001a240  -> 0001a240
+00015dd2  cmp r15, rbx
+00015dd5  jbe 0x18001682c
+00015ddb  mov rax, qword ptr [rbp - 0x60]
+00015ddf  mov edx, dword ptr [rax + r14]
+00015de3  lea rcx, [rbp + 0x80]
+00015dea  call 0x18029c000  -> 0029c000
+00015def  movups xmm6, xmmword ptr [rax]
+00015df2  movups xmm7, xmmword ptr [rax + 0x10]
+00015df6  movups xmm8, xmmword ptr [rax + 0x20]
+00015dfb  movups xmm9, xmmword ptr [rax + 0x30]
+00015e00  mov ebx, dword ptr [rax + 0x40]
+00015e03  mov qword ptr [rbp + 0xe0], r12
+00015e0a  mov qword ptr [rbp + 0xe8], 0xf
+00015e15  mov byte ptr [rbp + 0xd0], 0
+00015e1c  mov r8d, 0xc
+00015e22  lea rdx, [rip + 0x3c61e7]  ; "videoTexture"
+00015e29  lea rcx, [rbp + 0xd0]
+00015e30  call 0x180007290  -> 00007290
+00015e35  nop
+00015e36  lea r8, [rbp + 0xd0]
+00015e3d  lea rdx, [rbp + 0x110]
+00015e44  lea rcx, [rbp - 0x30]
+00015e48  call 0x18000d270  -> 0000d270
+00015e4d  mov rax, qword ptr [rbp + 0x110]
+00015e54  movups xmmword ptr [rax + 0x30], xmm6
+00015e58  movups xmmword ptr [rax + 0x40], xmm7
+00015e5c  movups xmmword ptr [rax + 0x50], xmm8
+00015e61  movups xmmword ptr [rax + 0x60], xmm9
+00015e66  mov dword ptr [rax + 0x70], ebx
+00015e69  mov rdx, qword ptr [rbp + 0xe8]
+00015e70  cmp rdx, 0x10
+00015e74  jb 0x180015eaa
+00015e76  inc rdx
+00015e79  mov rcx, qword ptr [rbp + 0xd0]
+00015e80  mov rax, rcx
+00015e83  cmp rdx, 0x1000
+00015e8a  jb 0x180015ea5
+00015e8c  add rdx, 0x27
+00015e90  mov rcx, qword ptr [rcx - 8]
+00015e94  sub rax, rcx
+00015e97  add rax, -8
+00015e9b  cmp rax, 0x1f
+00015e9f  ja 0x180016129
+00015ea5  call 0x18036c460  -> 0036c460
+00015eaa  movsxd r14, r13d
+00015ead  mov rbx, qword ptr [rbp + 0x10]
+00015eb1  test esi, esi
+00015eb3  jne 0x180015f22
+00015eb5  mov rcx, qword ptr [rbp + 0x18]
+00015eb9  sub rcx, rbx
+00015ebc  movabs rax, 0x4924924924924925
+00015ec6  imul rcx
+00015ec9  sar rdx, 4
+00015ecd  mov rax, rdx
+00015ed0  shr rax, 0x3f
+00015ed4  add rdx, rax
+00015ed7  cmp rdx, r14
+00015eda  jbe 0x18001680e
+00015ee0  imul rcx, r14, 0x38
+00015ee4  add rcx, rbx
+00015ee7  mov eax, 0x10
+00015eec  mov r9d, dword ptr [rip + 0x42eaad]
+00015ef3  mov r8, qword ptr gs:[0x58]
+00015efc  add rax, qword ptr [r8 + r9*8]
+00015f00  mov rdx, qword ptr [rax]
+00015f03  cmp byte ptr [rdx + 0x150], sil
+00015f0a  je 0x180015f14
+00015f0c  mov edx, dword ptr [rdx + 0x154]
+00015f12  jmp 0x180015f17  -> 00015f17
+00015f14  mov edx, r12d
+00015f17  lea r8, [rbp - 0x30]
+00015f1b  call 0x180005a70  -> 00005a70
+00015f20  mov esi, eax
+00015f22  cmp r15, r14
+00015f25  jbe 0x180016826
+00015f2b  imul rax, r14, 0x38
+00015f2f  mov qword ptr [rsp + 0x60], rax
+00015f34  mov rcx, qword ptr [rbp - 0x78]
+00015f38  add rcx, rax
+00015f3b  call 0x1800047e0  -> 000047e0
+00015f40  mov rcx, qword ptr [rbp + 0x18]
+00015f44  sub rcx, rbx
+00015f47  movabs rax, 0x4924924924924925
+00015f51  imul rcx
+00015f54  mov r15, rdx
+00015f57  sar r15, 4
+00015f5b  mov rax, r15
+00015f5e  shr rax, 0x3f
+00015f62  add r15, rax
+00015f65  cmp r15, qword ptr [rsp + 0x58]
+00015f6a  jbe 0x180016820
+00015f70  mov rax, qword ptr [rsp + 0x68]
+00015f75  mov edx, dword ptr [rax]
+00015f77  lea rcx, [rbp + 0x80]
+00015f7e  call 0x18029c000  -> 0029c000
+00015f83  movups xmm6, xmmword ptr [rax]
+00015f86  movups xmm7, xmmword ptr [rax + 0x10]
+00015f8a  movups xmm8, xmmword ptr [rax + 0x20]
+00015f8f  movups xmm9, xmmword ptr [rax + 0x30]
+00015f94  mov ebx, dword ptr [rax + 0x40]
+00015f97  mov qword ptr [rbp + 0xe0], r12
+00015f9e  mov qword ptr [rbp + 0xe8], 0xf
+00015fa9  mov byte ptr [rbp + 0xd0], 0
+00015fb0  mov r8d, 0xc
+00015fb6  lea rdx, [rip + 0x3c6053]  ; "videoTexture"
+00015fbd  lea rcx, [rbp + 0xd0]
+00015fc4  call 0x180007290  -> 00007290
+00015fc9  nop
+00015fca  lea r8, [rbp + 0xd0]
+00015fd1  lea rdx, [rbp + 0xf0]
+00015fd8  lea rcx, [rbp - 0x30]
+00015fdc  call 0x18000d270  -> 0000d270
+00015fe1  mov rax, qword ptr [rbp + 0xf0]
+00015fe8  movups xmmword ptr [rax + 0x30], xmm6
+00015fec  movups xmmword ptr [rax + 0x40], xmm7
+00015ff0  movups xmmword ptr [rax + 0x50], xmm8
+00015ff5  movups xmmword ptr [rax + 0x60], xmm9
+00015ffa  mov dword ptr [rax + 0x70], ebx
+00015ffd  mov rdx, qword ptr [rbp + 0xe8]
+00016004  cmp rdx, 0x10
+00016008  jb 0x18001603e
+0001600a  inc rdx
+0001600d  mov rcx, qword ptr [rbp + 0xd0]
+00016014  mov rax, rcx
+00016017  cmp rdx, 0x1000
+0001601e  jb 0x180016039
+00016020  add rdx, 0x27
+00016024  mov rcx, qword ptr [rcx - 8]
+00016028  sub rax, rcx
+0001602b  add rax, -8
+0001602f  cmp rax, 0x1f
+00016033  ja 0x180016130
+00016039  call 0x18036c460  -> 0036c460
+0001603e  mov r9d, r13d
+00016041  xor r8d, r8d
+00016044  mov rdx, rdi
+00016047  lea rcx, [rbp - 0x30]
+0001604b  call 0x18001a240  -> 0001a240
+00016050  test esi, esi
+00016052  jne 0x1800160de
+00016058  mov rcx, qword ptr [rbp - 0x48]
+0001605c  mov r8, qword ptr [rbp - 0x50]
+00016060  sub rcx, r8
+00016063  movabs rax, 0x4924924924924925
+0001606d  imul rcx
+00016070  sar rdx, 4
+00016074  mov rax, rdx
+00016077  shr rax, 0x3f
+0001607b  add rdx, rax
+0001607e  cmp rdx, r14
+00016081  jbe 0x180016814
+00016087  mov rbx, qword ptr [rsp + 0x60]
+0001608c  lea r9, [r8 + rbx]
+00016090  mov eax, 0x10
+00016095  mov r8d, dword ptr [rip + 0x42e904]
+0001609c  mov rdx, qword ptr gs:[0x58]
+000160a5  add rax, qword ptr [rdx + r8*8]
+000160a9  mov rcx, qword ptr [rax]
+000160ac  cmp byte ptr [rcx + 0x150], sil
+000160b3  je 0x1800160cb
+000160b5  mov edx, dword ptr [rcx + 0x154]
+000160bb  lea r8, [rbp - 0x30]
+000160bf  mov rcx, r9
+000160c2  call 0x180005a70  -> 00005a70
+000160c7  mov esi, eax
+000160c9  jmp 0x1800160e3  -> 000160e3
+000160cb  mov edx, r12d
+000160ce  lea r8, [rbp - 0x30]
+000160d2  mov rcx, r9
+000160d5  call 0x180005a70  -> 00005a70
+000160da  mov esi, eax
+000160dc  jmp 0x1800160e3  -> 000160e3
+000160de  mov rbx, qword ptr [rsp + 0x60]
+000160e3  cmp r15, r14
+000160e6  jbe 0x18001681a
+000160ec  mov rcx, qword ptr [rbp + 0x10]
+000160f0  add rcx, rbx
+000160f3  call 0x1800047e0  -> 000047e0
+000160f8  inc r13d
+000160fb  mov rbx, qword ptr [rsp + 0x58]
+00016100  inc rbx
+00016103  mov qword ptr [rsp + 0x58], rbx
+00016108  mov r14, qword ptr [rsp + 0x68]
+0001610d  add r14, 0x38
+00016111  mov qword ptr [rsp + 0x68], r14
+00016116  cmp r13d, dword ptr [rdi + 0x6fac]
+0001611d  jge 0x180016137
+0001611f  mov r15, qword ptr [rsp + 0x78]
+00016124  jmp 0x180015dc0  -> 00015dc0
+00016129  call qword ptr [rip + 0x3bcbb9]
+0001612f  int3
+00016130  call qword ptr [rip + 0x3bcbb2]
+00016136  int3
+00016137  test esi, esi
+00016139  jne 0x180016149
+0001613b  lea rcx, [rbp + 0x168]

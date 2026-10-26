@@ -1,0 +1,80 @@
+# Build
+build/
+cmake-build-*/
+out/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.map
+*.log
+*.res
+*.user
+*.suo
+*.vcxproj.user
+
+# OFX bundle artifacts
+*.ofx.bundle/
+bundle/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+Makefile
+compile_commands.json
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Local SDK clones / large dumps
+build-sdk/
+extracted/
+work/*.exe
+work/*.obj
+work/*.ppm
+work/*.pfm
+work/*.png
+smoke_out/
+
+# Installers outputs
+installer/*.exe
+installer/*.msi
+installer/*.pkg
+installer/*.dmg
+installer/*.tar.gz
+installer/*.zip
+installer/*.AppImage
+installer/*.run
+dist/
+
+# OS junk
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Logs / temp
+*.tmp
+*.bak
+*~
