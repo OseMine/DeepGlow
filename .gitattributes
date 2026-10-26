@@ -1,0 +1,3 @@
+# CI runs shell scripts with bash on Windows too, where a CRLF checkout would
+# break them ("set: invalid option name").
+*.sh text eol=lf

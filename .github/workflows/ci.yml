@@ -19,10 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Clone upstream OpenFX SDK (OFX_Release_1_4_TAG)
+      - name: Fetch upstream OpenFX SDK (pinned commit)
         shell: bash
-        run: |
-          git clone --depth 1 --branch OFX_Release_1_4_TAG https://github.com/AcademySoftwareFoundation/openfx.git openfx-sdk
+        run: bash ./.github/scripts/fetch-ofx-sdk.sh openfx-sdk
 
       - name: Configure (Linux/macOS)
         if: runner.os != 'Windows'
